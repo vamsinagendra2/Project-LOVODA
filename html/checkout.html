@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovoda | Checkout</title>
+    <script src="https://kit.fontawesome.com/3824cf4ce7.js" crossorigin="anonymous"></script>
+
+    <style>
+        .logo{
+            position: relative;
+             margin-left: auto;
+            margin-right: auto;
+            min-height: 190px;
+            background-color: #fafafa;
+        }
+        .final-layout{
+            width: 1180px;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            padding-top: 80px;
+        }
+        .logo text{
+            font-size: 17px;
+            font-weight: 500;
+        }
+        .address{
+            width:58% ;
+            height: auto;
+        }
+        .common-div{
+            height: auto;
+            width: 100%;
+            padding: 15px;
+            clear: both;
+        }
+        .common-div>div:first-child{
+            display: flex;
+            flex-direction: row;
+        }
+        .common-div>div>i{
+            margin-top: 12px;
+            font-size: 30px;
+            color: rgb(90, 90, 90);
+            margin-right: 20px;
+        }
+        .common-div>div>h2,
+        .common-div>div:nth-child(3)>h3,
+        .payment>h3{
+                color: #000;
+                font-family: Poppins,Arial,Helvetica,sans-serif;
+                font-weight: 700;
+                 font-size: 18px;
+                 letter-spacing: .05em;
+                 margin-left: 25px;
+        }
+        .common-div>div:nth-child(2){
+            border-bottom: 2px solid black;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .common-div>div:nth-child(3){
+            padding-left: 60px;
+        }
+        .common-div>div:nth-child(3)>p{
+            float: left;
+            margin-top: 30px;
+        }
+        .common-div>div:nth-child(3)>button,
+        .common-div>div>button{
+            float: right;
+            margin-top: 20px;
+            width: 90px;
+            height: 30px;
+            font-size: 11px;
+            font-weight: 700;
+            border-radius: 0;
+            padding: 7px 13px;
+            color: #000;
+            background-color: white;
+            border:0.5px solid black;
+        }
+        .common-div>div>button{
+            border: none;
+            
+            margin-left: 70%;
+        }
+        .common-div>div:nth-child(3)>h3,
+        .common-div>div:nth-child(3)>div>div>h3{
+             margin-top: 40px;
+            font-size: 14px;
+            margin-left: 0px;
+        }
+        .common-div>div:nth-child(3)>select,
+        .common-div>div:nth-child(3)>input{
+            width: 100%;
+            height: 40px;
+        }
+        .common-div>div:nth-child(3)>div,
+        .payment>div{
+            display: flex;
+            flex-direction: row;
+        }
+        .common-div>div:nth-child(3)>div>div{
+            width: 50%;
+        }
+        .common-div>div:nth-child(3)>div>div:nth-child(2){
+            margin-left: 20px;
+        }
+        .common-div>div:nth-child(3)>div>div>input{
+            width: 100%;
+            height: 30px;
+        }
+        div+.common-div>div:nth-child(3)>button{
+            width: 120px;
+            height: 40px;
+            margin-right: 510px;
+            color: white;
+            background-color: black;
+        }
+        .preview{
+            width:42% ;
+            height: auto;
+            margin-left: 4%;
+            height: 800px;
+            border: 1px solid black;
+        }
+        .preview>div{
+            display: flex;
+            flex-direction: row;
+            background-color: black;
+            color: white;
+            width: 100%;
+            height: 50px;
+            font-family: Poppins,Arial,Helvetica,sans-serif;
+        }
+        .preview>div>h3{
+            font-size: 18px;
+            font-weight: 600;
+            margin-left: 25px;
+        }
+        .preview>div>a{
+            margin-left: 45%;
+            margin-top: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        #your-cart-name-p {
+  margin-left: 10px;
+  letter-spacing: 1px;
+  font-size: 15px;
+  width: 200px;
+  position: relative;
+  bottom:100px;
+  left: 80px;
+}
+#your-cart-price-h4 {
+  margin-left: 10px;
+  position: relative;
+  left: 350px;
+  bottom: 150px;
+}
+#order-summary-img{
+    height: 120px;
+    margin: 5px;
+}
+#order-summary-div{
+    width: 448px;
+    background-color: white;
+    height: 500px;
+    color: black;
+}
+        #sum {
+            background-color: white;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            font-family: Poppins, Arial, Helvetica, sans-serif;
+            width: 400px;
+        }
+
+        #sum>div>p>span {
+            float: right;
+        }
+
+        #sum>div:nth-child(4) {
+            border-bottom: 1px solid rgb(219, 219, 219);
+            width: 100%;
+        }
+
+        #sum>div:nth-child(5)>p {
+            margin-top: 25px;
+            font-size: 16px;
+        }
+
+        #sum>div:nth-child(5)>p>span {
+            font-weight: bold;
+        }
+
+        
+        .payment-cart{
+            height: auto;
+            width: 1170px;
+        }
+        .pay-list{
+            display: flex;
+            flex-direction: row;
+            border: 1px solid rgb(211, 211, 211);
+            background-color: white;
+            font-family: Poppins,Arial,Helvetica,sans-serif;
+            height: 60px;
+        }
+        .pay-list>input[type=radio] {
+            width: 25px;
+            height: 25px;
+            margin-top: 13px;
+            margin-right: 20px;
+        }
+        .master,.jcb,.amex,.last-card{
+            height: 30px;
+            width: 80px;
+            margin-top: 10px;
+            margin-left: -25px;
+        }
+        .master{
+            margin-left: 170px;
+        }
+        .pay-list>img{
+            height: 25px;
+            margin-top: 10px;
+            margin-right: 130px;
+        }
+        .pay-form{
+            background-color: rgb(233, 233, 233);
+            padding-bottom: 20px;
+        }
+        .pay-form>div{
+            display: flex;
+            flex-direction: row;
+            font-family: Poppins,Arial,Helvetica,sans-serif;
+        }
+        .pay-form>div>div:nth-child(1){
+             margin-left: 50px;
+        }
+        .pay-form>div>div:nth-child(2){
+            margin-left: 20px;
+        }
+        .pay-form input{
+            margin-top: -20px;
+            background-color: rgb(233, 233, 233);
+            box-shadow: none;
+            border: 0.5px solid rgb(167, 167, 167) ;
+        }
+        .pay-form h6{
+            font-size: 12px;
+        }
+        .pay-form>div:nth-child(2){
+            margin-top: -20px;
+        }
+        .pay-form>div>div:nth-child(1)>input{
+            width: 400px;
+            height: 40px;
+        }
+        .pay-form>div>div:nth-child(2)>input{
+            width: 80px;
+            height: 40px;
+        }
+        .payment-cart>div>button{
+            width: 100%;
+            height: 50px;
+            margin-top: 20px;
+            font-family: Poppins,Arial,Helvetica,sans-serif;
+            font-weight: 800;
+            font-size: 13px;
+            letter-spacing: 1px;
+            background-color: white;
+        }
+        .payment-cart>div>button:hover{
+            background-color: black;
+            color: white;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="logo">
+        <a href="loggedin-home-page.html">
+            <svg viewBox="0 0 580 48">
+                <text transform="matrix(1 0 0 1 79.9964 40.0558)">LOVODA</text>
+            </svg>
+        </a>
+    </div>
+    <div class="final-layout">
+        <div class="address">
+            <div class="common-div">
+                <div>
+                    <i class="fas fa-check"></i>
+                    <h2>Customer</h2>
+                </div>
+                <div></div>
+                <div>
+                    <p  id="checkout-email"></p>
+                    <button>SIGN OUT</button>
+                </div>
+            </div>
+            <div class="common-div">
+                <div>
+                    <i class="fas fa-check"></i>
+                    <h2>Shipping</h2>
+                    <button>EDIT</button>
+                </div>
+                <div></div>
+                <div>
+                    <h3>Shipping Address</h3>
+                    <h3>country</h3>
+                    <select >
+                        <option value="India" id="country">india</option>
+                    </select>
+                    <div>
+                        <div>
+                            <h3>first name</h3>
+                            <input type="text" id="first-name">
+                        </div>
+                        <div>
+                            <h3>last name</h3>
+                            <input type="text" id="last-name">
+                        </div>
+                    </div>
+                    <h3>Address</h3>
+                   <input type="text" id="address">
+                <div>
+                    <div>
+                        <h3>city</h3>
+                        <input type="text" id="city">
+                    </div>
+                    <div>
+                        <h3>state</h3>
+                        <input type="text" id="state">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h3>Postal Code</h3>
+                        <input type="text" id="pin-code">
+                    </div>
+                    <div>
+                        <h3>Phone Number</h3>
+                        <input type="text" id="phone-number">
+                    </div>
+                </div>
+                <button onclick="billing()">CONTINUE</button>
+                </div>
+            </div>
+            <div class="common-div">
+                <div>
+                    <i class="fas fa-check"></i>
+                    <h2>Billing</h2>
+                </div>
+                <div></div>
+                <div>
+                    <p id="address-apend">address</p>
+                </div>
+            </div>
+            <div class="common-div">
+                <div>
+                    <i class="fas fa-check"></i>
+                    <h2>Payment</h2>
+                </div>
+                <div></div>
+                
+                    <div>
+                        <div class="payment">
+                            <div class="payment-cart">
+                                <div>
+                                    <div class="pay-list">
+                                        <input type="radio" id="">
+                                        <p>Credit/Debit Card</p>
+                                        <svg class="master" viewBox="0 0 131.39 86.9" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M48.37 15.14h34.66v56.61H48.37z" fill="#ff5f00"></path>
+                                            <path d="M51.94 43.45a35.94 35.94 0 0113.75-28.3 36 36 0 100 56.61 35.94 35.94 0 01-13.75-28.31z"
+                                                fill="#eb001b">
+                                            </path>
+                                            <path
+                                                d="M120.5 65.76V64.6h.5v-.24h-1.19v.24h.47v1.16zm2.31 0v-1.4h-.36l-.42 1-.42-1h-.36v1.4h.26V64.7l.39.91h.27l.39-.91v1.06zM123.94 43.45a36 36 0 01-58.25 28.3 36 36 0 000-56.61 36 36 0 0158.25 28.3z"
+                                                fill="#f79e1b"></path>
+                                        </svg>
+                                        <svg class="amex" height="104" viewBox="0 0 156 104" width="156" xmlns="http://www.w3.org/2000/svg">
+                                            <g fill="none" fill-rule="evenodd">
+                                                <path
+                                                    d="M144 104H12c-6.15 0-12-5.85-12-12V12C0 5.85 5.85 0 12 0h132c6.15 0 12 5.85 12 12v80c0 6.15-5.85 12-12 12z"
+                                                    fill="#60C7EE"></path>
+                                                <g fill="#FFF">
+                                                    <path
+                                                        d="M95.05 46.532v3.68h12.93v4.723H95.05V59.5h12.79l5.244-6.824-4.673-6.144H95.05m-59.707 9.382h5.906l-2.97-8.324-2.94 8.324">
+                                                    </path>
+                                                    <path
+                                                        d="M128.833 52.77l11.29-15.125h-19.067l-2.536 3.9-2.608-3.9h-46.59l-1.254 4.224-1.264-4.227H31.27L17.72 68.687h17.326l1.31-3.822h3.824l1.345 3.822h73.594l3.28-4.594 3.28 4.594h19.36l-4.867-6.343-7.342-9.574zM83.185 64.744H76.38v-17.66l-5.243 17.66h-6.16l-5.233-17.66v17.66H44.318l-1.345-3.823H33.54l-1.312 3.826h-8.483L33.85 41.588h9.065L52.94 64.56V41.59h10.927l4.214 14.09 4.187-14.09h10.92v23.156zm40.524 0l-5.31-7.44-5.31 7.44H86.72V41.588h27.085l4.76 7.124 4.63-7.124h9.062l-8.37 11.215 9.16 11.94h-9.338z">
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                        ​
+                                        <svg class="jcb" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.4"
+                                            viewBox="0 0 480 301" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M444 0H24C12 0 0 12 0 24v240.1c0 24 12 36 36 36h408c24 0 36-12 36-36v-228C480 12 468 0 444 0z"
+                                                fill="#f4f4f4"></path>
+                                            <path d="M314.8 174.9h21.5l2.7-.2c4-.8 7.6-4.5 7.6-9.6 0-5-3.5-8.6-7.6-9.6l-2.7-.3h-21.5V175z"
+                                                fill="#469951" fill-rule="nonzero"></path>
+                                            <path
+                                                d="M333.9 39.2a37.3 37.3 0 0 0-37.3 37.2v38.7h52.6c1.2 0 2.7 0 3.7.2 11.9.7 20.7 6.8 20.7 17.4 0 8.4-6 15.6-17 17v.4c12 .8 21.3 7.6 21.3 18 0 11.3-10.3 18.7-23.8 18.7h-57.7v75.7h54.7a37.3 37.3 0 0 0 37.2-37.3v-186H334z"
+                                                fill="#469951" fill-rule="nonzero"></path>
+                                            <path d="M343.9 135.2c0-5-3.5-8.2-7.6-8.8l-2-.2h-19.5v18h19.5c.3 0 1.4 0 2-.2 4.1-.6 7.6-3.9 7.6-8.8z"
+                                                fill="#469951" fill-rule="nonzero"></path>
+                                            <path
+                                                d="M128 39.2a37.3 37.3 0 0 0-37.3 37.2v92a73.7 73.7 0 0 0 32.2 8.3c12.8 0 19.8-7.7 19.8-18.4V115h32v43.2c0 16.8-10.5 30.5-46 30.5-21.4 0-38.2-4.7-38.2-4.7v78.4h54.7a37.3 37.3 0 0 0 37.2-37.3V39.2H128z"
+                                                fill="#245797" fill-rule="nonzero"></path>
+                                            <path
+                                                d="M231 39.2a37.3 37.3 0 0 0-37.3 37.2v48.8c9.4-8 25.8-13.1 52.2-12 14 .7 29.2 4.6 29.2 4.6v15.8a70.9 70.9 0 0 0-28.2-8.2c-20-1.5-32.1 8.4-32.1 25.5 0 17.4 12 27.3 32 25.6a74.3 74.3 0 0 0 28.3-8.2v15.8s-15 3.9-29.2 4.5c-26.4 1.2-42.8-3.9-52.2-11.9v86h54.6a37.3 37.3 0 0 0 37.3-37.3V39.2h-54.7z"
+                                                fill="#ca4638" fill-rule="nonzero"></path>
+                                        </svg>
+                                        ​
+                                        <svg class="last-card" height="104" viewBox="0 0 152 104" width="152" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <defs>
+                                                <rect height="104" id="a" rx="12" width="152"></rect>
+                                            </defs>
+                                            <g fill="none" fill-rule="evenodd">
+                                                <mask fill="#fff" id="b">
+                                                    <use xlink:href="#a"></use>
+                                                </mask>
+                                                <use fill="#F4F4F4" xlink:href="#a"></use>
+                                                <rect fill="#F4F4F4" height="104" mask="url(#b)" rx="12" width="152" x="1"></rect>
+                                                <g transform="translate(42 26)">
+                                                    <ellipse cx="26.716" cy="26" fill="#009FDA" rx="26" ry="26"></ellipse>
+                                                    <path d="M24.116 0c13 0 25.997 11.643 25.997 26 0 14.355-12.997 26-25.997 26V0z" fill="#009FDA">
+                                                    </path>
+                                                    <path d="M24.116 52V0H42.75c13 0 25.997 11.643 25.997 26 0 14.355-12.997 26-25.997 26H24.116z"
+                                                        fill="#009FDA"></path>
+                                                    <circle cx="25.255" cy="27.139" fill="#F3F4F4" r="24.539"></circle>
+                                                    <path
+                                                        d="M38.255 24.983c0-7.09-6.34-13.02-11.54-14.583v29.167c5.2-1.563 11.54-7.488 11.54-14.584zM5.916 24.986c0 7.09 6.34 13.02 11.54 14.583V10.4c-5.2 1.565-11.54 7.493-11.54 14.586z"
+                                                        fill="#009FDA"></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="pay-form">
+                                        <div>
+                                            <div>
+                                                <h6>Credit Card Number</h6>
+                                                <input type="text" required>
+                                            </div>
+                                            <div>
+                                                <h6>Expiration</h6>
+                                                <input type="text" placeholder="MM/YY" required>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <h6>Name on Card</h6>
+                                                <input type="text">
+                                            </div>
+                                            <div>
+                                                <h6>CVV</h6>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- second column -->
+                                    ​
+                                    <div class="pay-list">
+                                        <input type="radio" id="">
+                                        <img src="https://cdn11.bigcommerce.com/r-ae03a01312006b30706774b8c83a15a9f90c902a/img/payment-providers/paypalpaymentsprouk.png"
+                                            alt="">
+                                        <svg class="master" viewBox="0 0 131.39 86.9" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M48.37 15.14h34.66v56.61H48.37z" fill="#ff5f00"></path>
+                                            <path d="M51.94 43.45a35.94 35.94 0 0113.75-28.3 36 36 0 100 56.61 35.94 35.94 0 01-13.75-28.31z"
+                                                fill="#eb001b">
+                                            </path>
+                                            <path
+                                                d="M120.5 65.76V64.6h.5v-.24h-1.19v.24h.47v1.16zm2.31 0v-1.4h-.36l-.42 1-.42-1h-.36v1.4h.26V64.7l.39.91h.27l.39-.91v1.06zM123.94 43.45a36 36 0 01-58.25 28.3 36 36 0 000-56.61 36 36 0 0158.25 28.3z"
+                                                fill="#f79e1b"></path>
+                                        </svg>
+                                        <svg class="amex" height="104" viewBox="0 0 156 104" width="156" xmlns="http://www.w3.org/2000/svg">
+                                            <g fill="none" fill-rule="evenodd">
+                                                <path
+                                                    d="M144 104H12c-6.15 0-12-5.85-12-12V12C0 5.85 5.85 0 12 0h132c6.15 0 12 5.85 12 12v80c0 6.15-5.85 12-12 12z"
+                                                    fill="#60C7EE"></path>
+                                                <g fill="#FFF">
+                                                    <path
+                                                        d="M95.05 46.532v3.68h12.93v4.723H95.05V59.5h12.79l5.244-6.824-4.673-6.144H95.05m-59.707 9.382h5.906l-2.97-8.324-2.94 8.324">
+                                                    </path>
+                                                    <path
+                                                        d="M128.833 52.77l11.29-15.125h-19.067l-2.536 3.9-2.608-3.9h-46.59l-1.254 4.224-1.264-4.227H31.27L17.72 68.687h17.326l1.31-3.822h3.824l1.345 3.822h73.594l3.28-4.594 3.28 4.594h19.36l-4.867-6.343-7.342-9.574zM83.185 64.744H76.38v-17.66l-5.243 17.66h-6.16l-5.233-17.66v17.66H44.318l-1.345-3.823H33.54l-1.312 3.826h-8.483L33.85 41.588h9.065L52.94 64.56V41.59h10.927l4.214 14.09 4.187-14.09h10.92v23.156zm40.524 0l-5.31-7.44-5.31 7.44H86.72V41.588h27.085l4.76 7.124 4.63-7.124h9.062l-8.37 11.215 9.16 11.94h-9.338z">
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    ​
+                                    <div class="pay-list">
+                                        <input type="radio" name="" id="">
+                                        <img src="https://cdn11.bigcommerce.com/r-071a51c804407fd32f0c0fc35feee0d3cf6e99fa/img/payment-providers/afterpay-badge-blackonmint.png"
+                                            alt="">
+                                        <p>Pay over time</p>
+                                    </div>
+                                    ​
+                                    <button id="place" onclick="redirectToOrders()">PLACE ORDER</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                
+            </div>
+        </div>
+        <div class="preview">
+            <div>
+                <h3>Order Summary</h3>
+                <a>EDIT CART</a>
+            </div>
+        <div id="order-summary-div"></div>
+            <div id="sum">
+                
+            
+            </div>
+        </div>
+    </div>
+
+
+               
+    
+       
+   
+                
+
+
+    
+
+
+</body>
+<script>
+    var users = JSON.parse(localStorage.getItem('users'))
+    var email = document.getElementById('checkout-email')
+    email.innerHTML=`${users[0].email}`
+    
+
+    var order_summary = document.getElementById('order-summary-div')
+    console.log(order_summary)
+    var div = document.createElement('div')
+    var cart = JSON.parse(localStorage.getItem('cart'))
+    div.innerHTML=`<div id="order_summry_outer-div">
+        <img src="${cart[cart.length-1].url}" alt="" id="order-summary-img">
+        <p id="your-cart-name-p">${cart[cart.length - 1].name}</p>
+        <h4 id="your-cart-price-h4">${"$ " + cart[cart.length - 1].price}</h4>
+        </div> `
+        order_summary.append(div)
+
+
+
+
+    var sum = document.getElementById('sum')
+     sum.innerHTML=`<div>
+                    <p>Subtotal <span>$ ${cart[cart.length-1].price}</span></p>
+                </div>
+                <div>
+                    <p>Shipping<span>$ 10</span></p>
+                </div>
+                <div>
+                    <p>Tax <span>$ 0.00</span></p>
+                </div>
+                <div></div>
+                <div>
+                    <p>Total (USD) <span>$ ${Number(cart[cart.length - 1].price) + 10}</span> </p>
+                </div>`
+    function billing(){
+        var country = document.getElementById('country').value
+        var first_name = document.getElementById('first-name').value
+        var last_name = document.getElementById('last-name').value
+        var address =document.getElementById('address').value
+        var city = document.getElementById('city').value
+        var state = document.getElementById('state').value
+        var pin_code = document.getElementById('pin-code').value
+        var phone_number = document.getElementById('phone-number').value
+
+        var arr=[];
+        var obj={
+            country,
+            first_name,
+            last_name,
+            address,
+            city,
+            state,
+            pin_code,
+            phone_number
+        }
+        arr.push(obj)
+        localStorage.setItem('checkout-address',JSON.stringify(arr))
+        var checkout_address = JSON.parse(localStorage.getItem('checkout-address'))
+        var address_apend = document.getElementById('address-apend')
+        address_apend.innerHTML=`<span>${checkout_address[0].first_name} ${checkout_address[0].last_name}</span><br>
+    <span>${checkout_address[0].address} ${checkout_address[0].city},${checkout_address[0].state}</span><br>
+    <span>${checkout_address[0].pin_code} ${checkout_address[0].country}</span><br>
+    <span>${checkout_address[0].phone_number}</span>`
+    }
+    function redirectToOrders(){
+        window.location.href='loggedin-home-page.html'
+        alert("Order Placed")
+    }
+    
+</script>
+
+</html>

@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home lovoda</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <div class="header-top">
+            <!-- header left -->
+            <div class="header-left">
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="loggedin-account.html"><span>ACCOUNT</span></a></li>
+                        <li><a href="#" id="after-login" "></a></li>
+                        <i id=" icons" class="material-icons">expand_more</i>
+                        <li><a href="home.html"><span>LOGOUT</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+
+
+
+
+
+            <!-- header right -->
+            <div id="search"></div>
+            <div class="header-right">
+                <div class="right-content">
+                    <a class="search-toggle" href="#">
+                        <img src="https://img.icons8.com/fluent-systems-filled/48/000000/search.png"
+                            onclick="search()" />
+                        <div id="search"></div>
+                    </a>
+                    <div>
+                        <a href="#"><span>GIFT CERTIFICATE</span></a>
+                    </div>
+                    <div>
+                        <a href="#"><span>WISH LIST</span></a>
+                    </div>
+                    <div>
+                        <a href="#" onclick="cart()"><span>CART</span></a>
+                    </div>
+                    <div>
+                        <i class="cart-icon">
+                            <svg viewBox="0 0 612 792">
+                                <path d="M607.17,737.635c0-178.334,0-356.874,0-535.619c0.182-2.559,0.182-5.127,0-7.686c-2.122-29.95-28.122-52.508-58.071-50.386
+                    h-69.81c-19.151,0-19.77-1.236-23.477-20.387c-6.619-38.108-27.079-72.429-57.454-96.375C376.332,10.264,349.518,0.75,321.754,0
+                    h-30.89c-23.772,0.694-46.964,7.502-67.338,19.769c-35.928,23.702-60.335,61.32-67.339,103.788c0.332,2.025,0.3,4.093-0.094,6.107
+                    c-1.831,9.376-10.917,15.493-20.293,13.662c-24.711,0-49.423,0-74.134,0c-2.563-0.156-5.135-0.129-7.695,0.083
+                    c-29.583,2.443-51.584,28.406-49.141,57.989c0,178.746,0,357.492,0,536.237c-0.509,4.166-0.486,8.379,0.07,12.538
+                    c3.614,27.056,28.476,46.059,55.531,42.445h491.139c4.159,0.556,8.373,0.579,12.538,0.069
+                    C591.201,789.377,610.481,764.729,607.17,737.635z M208.081,136.53c6.555-50.154,49.502-87.534,100.081-87.107
+                    c53.103,2.293,95.15,45.697,95.757,98.846H218.583C209.317,148.269,206.228,148.269,208.081,136.53z M553.423,471.37
+                    c0,85.254,0,171.126,0,256.38c0,11.738,0,14.209-14.209,14.209H72.786c-11.738,0-14.209,0-14.209-14.209
+                    c0-171.744,0-343.694,0-515.85c0-11.738,0-14.209,14.209-14.209h466.428c11.737,0,14.209,0,14.209,14.209
+                    C552.805,298.39,553.423,384.88,553.423,471.37z"></path>
+
+                            </svg>
+                        </i>
+                    </div>
+                </div>
+            </div>
+            <!-- Header center -->
+            <div class="header-center">
+                <p>
+                    US ONLY - Free Shipping over $50 & Free Returns
+                    <a href="#">Shop now</a>
+                </p>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <h1 class="header-logo">
+                <a href="loggedin-home-page.html">
+                    <svg viewBox="0 0 323 48">
+                        <text transform="matrix(1 0 0 1 75.9964 37.0558)">LOVODA</text>
+                    </svg>
+                </a>
+            </h1>
+        </div>
+        <div class="navPages-container">
+            <div class="container">
+                <nav class="navPages">
+                    <ul class="navPages-list">
+                        <li class="cc"><a href="new-arrival.html"><span>NEW</span></a>
+                            <div class="hover-new">
+                                <div class="new-content">
+                                    <ul class="new-content-list">
+                                        <li class="new-content-item"><a href="new-arrival.html"><span>New Arrivals</span></a></li>
+                                        <li class="new-content-item"><a href="#"><span>Back in stocks</span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="cc"><a href="/html/earrings.html"><span>EARRINGS</span></a>
+                            <div class="hover-new">
+                                <div class="earring-content">
+                                    <ul class="earring-content-list">
+                                        <li class="tt">
+                                            <a href="#"><span>Statement Earrings</span></a>
+                                            <ul class="tt content-list-lighter-menu-text">
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Drop Earrings</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Golden</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Lucite and resin</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>crystal clear</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Hoop Earrings</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Ear jackets</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="tt">
+                                            <a href="#"><span>Charm Earrings</span></a>
+                                            <ul class="tt content-list-lighter-menu-text">
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Crawlers and Pins</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Threader Earrings</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Earrings set</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Cuffs</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="tt">
+                                            <a href="#"><span>Natural Earrings</span></a>
+                                            <ul class="tt content-list-lighter-menu-text">
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Wood & wicker</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>stone and marble earrings</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Geode Earrings</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="tt">
+                                            <a href="#"><span>Hypoellergic Earrings</span></a>
+                                        </li>
+                                        <li class="tt">
+                                            <a href="#"><span>Fine Earrings</span></a>
+                                            <ul class="tt content-list-lighter-menu-text">
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Sterling Silver Earrings</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Gold Plated Earrings</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cc"><a href="/html/necklace.html"><span>NECKLACES</span></a>
+                            <div class="hover-new">
+                                <div class="earring-content">
+                                    <ul class="earring-content-list">
+                                        <li class="tt">
+                                            <a href="#"><span>Layered Necklaces</span></a>
+                                            <br><br><br>
+                                            <a href="#"><span>Tassels and Pendant Necklaces</span></a>
+                                        </li>
+                                        <li class="tt">
+                                            <a href="#"><span>Fine Necklaces</span></a>
+                                            <ul class="tt content-list-lighter-menu-text">
+                                                <li style="font-weight: 600;">
+                                                    <a href="#">
+                                                        <span>Chokers</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Gold/Silver Chokers</span>
+                                                    </a>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="tt">
+                                            <a href="#"><span>Y-Necklaces & Lariats</span></a>
+
+                                        </li>
+                                        <li class="tt">
+                                            <a href="#"><span>Stone & Marble Necklaces</span></a>
+                                            <ul class="tt content-list-lighter-menu-text">
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Marble Necklaces</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Geode Necklaces</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="tt">
+                                            <a href="#"><span>Charm Necklaces</span></a>
+                                            <ul class="tt content-list-lighter-menu-text">
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Statement Necklaces</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Bearded Necklaces</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cc"><a href="#"><span>BRACELETS</span></a>
+                            <div class="hover-new">
+                                <div class="earring-content">
+                                    <ul class="earring-content-list">
+                                        <li class="tt">
+                                            <a href="#"><span>Fine Bracelets</span></a>
+                                        <li class="tt">
+                                            <a href="#"><span>Charm Bracelets</span></a>
+                                            <ul class="tt content-list-lighter-menu-text">
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Cord and Bead Bracelets</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="tt">
+                                            <a href="#"><span>Marble and Stone Jewelry</span></a>
+                                            <ul class="tt content-list-lighter-menu-text">
+                                                <li style="font-weight: 550">
+                                                    <a href="#">
+                                                        <span>Anklets</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="tt">
+                                            <a href="#"><span>Cuffs and Bangles</span></a>
+                                        </li>
+                                        <li class="tt">
+                                            <a href="#"><span>Statement Bracelets</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cc"><a href="#"><span>RINGS</span></a>
+                            <div class="hover-new">
+                                <div class="earring-content">
+                                    <ul class="earring-content-list">
+                                        <li class="tt">
+                                            <a href="#"><span>Fine Rings</span></a>
+                                            <ul class="tt content-list-lighter-menu-text">
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Gem Stone Rings</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="tt">
+                                            <a href="#"><span>Charm Rings</span></a>
+                                            <ul class="tt content-list-lighter-menu-text">
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Geode Rings</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Marble Rings</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="tt">
+                                            <a href="#"><span>Statement Rings</span></a>
+                                            <ul class="tt content-list-lighter-menu-text">
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Chunky Rings</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="tt">
+                                            <a href="#"><span>Adjustable Rings</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cc"><a href="#"><span>OTHER ACCESORIES</span></a>
+                            <div class="hover-new">
+                                <div class="earring-content">
+                                    <ul class="earring-content-list">
+                                        <li class="tt">
+                                            <a href="#"><span>Scarves</span></a>
+                                            <ul class="tt content-list-lighter-menu-text">
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Light Scarves</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Tie Scarves</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="tt">
+                                            <a href="#"><span>Purses and Totes</span></a>
+                                            <ul class="tt content-list-lighter-menu-text">
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Backpack</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Crossbody</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Satchel</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Totes</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="tt">
+                                            <a href="#"><span>Hats and Hair Accesories</span></a>
+                                            <ul class="tt content-list-lighter-menu-text">
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Hair Pins</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Hair Ties</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Hats</span>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span>Headbands and Headwraps</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="tt">
+                                            <a href="#"><span>Bracelets</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="cc"><a href="#"><span>SALE</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="container-page">
+        <div class="main-body">
+            <a href="#" class="charming">
+                <img src="https://lovoda.com/product_images/uploaded_images/210212-3.jpg" />
+            </a>
+        </div>
+
+        <!-- End of header -->
+        <!-- Sticky header navigation bar -->
+
+        <div class="whole-div">
+            <div class="navBar-sticky">
+                <div class="sticky-logo">
+                    <a href="./home.html">
+                        <img src="https://lovoda.com/product_images/uploaded_images/logosticky.png" alt="">
+                    </a>
+                </div>
+                <div class="sticky-menu-container">
+                    <nav class="navBar-sticky">
+                        <ul class="navBar-list-sticky">
+                            <li class="navBar-item-sticky cc"><a href="#"><span>NEW</span></a>
+                                <div class="hover-new">
+                                    <div class="new-content">
+                                        <ul class="new-content-list">
+                                            <li class="new-content-item"><a href="#"><span>New Arrivals</span></a></li>
+                                            <li class="new-content-item"><a href="#"><span>Back in stocks</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="navBar-item-sticky cc"><a href="#"><span>Earring</span></a>
+                                <div class="hover-new">
+                                    <div class="earring-content">
+                                        <ul class="earring-content-list">
+                                            <li class="tt">
+                                                <a href="#"><span>Statement Earrings</span></a>
+                                                <ul class="tt content-list-lighter-menu-text">
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Drop Earrings</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Golden</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Lucite and resin</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>crystal clear</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Hoop Earrings</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Ear jackets</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="tt">
+                                                <a href="#"><span>Charm Earrings</span></a>
+                                                <ul class="tt content-list-lighter-menu-text">
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Crawlers and Pins</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Threader Earrings</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Earrings set</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Cuffs</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="tt">
+                                                <a href="#"><span>Natural Earrings</span></a>
+                                                <ul class="tt content-list-lighter-menu-text">
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Wood & wicker</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>stone and marble earrings</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Geode Earrings</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="tt">
+                                                <a href="#"><span>Hypoellergic Earrings</span></a>
+                                            </li>
+                                            <li class="tt">
+                                                <a href="#"><span>Fine Earrings</span></a>
+                                                <ul class="tt content-list-lighter-menu-text">
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Sterling Silver Earrings</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Gold Plated Earrings</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="navBar-item-sticky cc"><a href="#"><span>NECKLACE</span></a>
+                                <div class="hover-new">
+                                    <div class="earring-content">
+                                        <ul class="earring-content-list">
+                                            <li class="tt">
+                                                <a href="#"><span>Layered Necklaces</span></a>
+                                                <br><br><br>
+                                                <a href="#"><span>Tassels and Pendant Necklaces</span></a>
+                                            </li>
+                                            <li class="tt">
+                                                <a href="#"><span>Fine Necklaces</span></a>
+                                                <ul class="tt content-list-lighter-menu-text">
+                                                    <li style="font-weight: 600;">
+                                                        <a href="#">
+                                                            <span>Chokers</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Gold/Silver Chokers</span>
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+                                            <li class="tt">
+                                                <a href="#"><span>Y-Necklaces & Lariats</span></a>
+
+                                            </li>
+                                            <li class="tt">
+                                                <a href="#"><span>Stone & Marble Necklaces</span></a>
+                                                <ul class="tt content-list-lighter-menu-text">
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Marble Necklaces</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Geode Necklaces</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="tt">
+                                                <a href="#"><span>Charm Necklaces</span></a>
+                                                <ul class="tt content-list-lighter-menu-text">
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Statement Necklaces</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Bearded Necklaces</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="navBar-item-sticky cc"><a href="#"><span>BRACELETS</span></a>
+                                <div class="hover-new">
+                                    <div class="earring-content">
+                                        <ul class="earring-content-list">
+                                            <li class="tt">
+                                                <a href="#"><span>Fine Bracelets</span></a>
+                                            <li class="tt">
+                                                <a href="#"><span>Charm Bracelets</span></a>
+                                                <ul class="tt content-list-lighter-menu-text">
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Cord and Bead Bracelets</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="tt">
+                                                <a href="#"><span>Marble and Stone Jewelry</span></a>
+                                                <ul class="tt content-list-lighter-menu-text">
+                                                    <li style="font-weight: 550">
+                                                        <a href="#">
+                                                            <span>Anklets</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="tt">
+                                                <a href="#"><span>Cuffs and Bangles</span></a>
+                                            </li>
+                                            <li class="tt">
+                                                <a href="#"><span>Statement Bracelets</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="navBar-item-sticky cc"><a href="#"><span>RINGS</span></a>
+                                <div class="hover-new">
+                                    <div class="earring-content">
+                                        <ul class="earring-content-list">
+                                            <li class="tt">
+                                                <a href="#"><span>Fine Rings</span></a>
+                                                <ul class="tt content-list-lighter-menu-text">
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Gem Stone Rings</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="tt">
+                                                <a href="#"><span>Charm Rings</span></a>
+                                                <ul class="tt content-list-lighter-menu-text">
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Geode Rings</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Marble Rings</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="tt">
+                                                <a href="#"><span>Statement Rings</span></a>
+                                                <ul class="tt content-list-lighter-menu-text">
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Chunky Rings</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="tt">
+                                                <a href="#"><span>Adjustable Rings</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="navBar-item-sticky cc"><a href="#"><span>OTHER ACCESORIES</span></a>
+                                <div class="hover-new">
+                                    <div class="earring-content">
+                                        <ul class="earring-content-list">
+                                            <li class="tt">
+                                                <a href="#"><span>Scarves</span></a>
+                                                <ul class="tt content-list-lighter-menu-text">
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Light Scarves</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Tie Scarves</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="tt">
+                                                <a href="#"><span>Purses and Totes</span></a>
+                                                <ul class="tt content-list-lighter-menu-text">
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Backpack</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Crossbody</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Satchel</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Totes</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="tt">
+                                                <a href="#"><span>Hats and Hair Accesories</span></a>
+                                                <ul class="tt content-list-lighter-menu-text">
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Hair Pins</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Hair Ties</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Hats</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <span>Headbands and Headwraps</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="tt">
+                                                <a href="#"><span>Bracelets</span></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="navBar-item-sticky cc"><a href="#"><span>SALE</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="nav-bar-right">
+                    <div class="search-sticky">
+                        <div class="search-button">
+                            <a href="#">
+                                <img src="https://img.icons8.com/fluent-systems-filled/48/000000/search.png" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <i class="fa fa-shopping-bag"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- end of sticky navigation bar -->
+
+        <!-- Carousel -->
+
+
+        <section class="carousel">
+            <span onclick="prev()">&#139</span>
+            <span onclick="frd()">&#155</span>
+            <div class="main-carousel">
+                <div class="carousel-slide">
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-8pcbviyy/images/stencil/600x900/products/6088/31576/010200865-2__83146.1619122623.jpg?c=2" />
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-8pcbviyy/images/stencil/600x900/products/6087/31573/010200878-2__78431.1619122270.jpg?c=2" />
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-8pcbviyy/images/stencil/600x900/products/6086/31572/011000158-2__91578.1619121962.jpg?c=2" />
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-8pcbviyy/images/stencil/600x900/products/6085/31568/010200829-E-2__37230.1619121680.jpg?c=2" />
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-8pcbviyy/images/stencil/600x900/products/6084/31563/010700040-S-1__84453.1619121359.jpg?c=2" />
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-8pcbviyy/images/stencil/600x900/products/6070/31519/010200874-6__12976.1619117776.jpg?c=2" />
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-8pcbviyy/images/stencil/600x900/products/6083/31560/010200839-2__07753.1619120966.jpg?c=2" />
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-8pcbviyy/images/stencil/600x900/products/6082/31557/010200872-2__93562.1619120587.jpg?c=2" />
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-8pcbviyy/images/stencil/600x900/products/6081/31553/010200870-2__22518.1619120262.jpg?c=2" />
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-8pcbviyy/images/stencil/600x900/products/6080/31550/010200854-2__85176.1619120019.jpg?c=2" />
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-8pcbviyy/images/stencil/600x900/products/6079/31549/010200876-2__52077.1619119725.jpg?c=2" />
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-8pcbviyy/images/stencil/600x900/products/6078/31378/010200864-2__84408.1618518818.jpg?c=2" />
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-8pcbviyy/images/stencil/600x900/products/6077/31374/010200866-2__24896.1618518489.jpg?c=2" />
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-8pcbviyy/images/stencil/600x900/products/6076/31371/011000155-2__97775.1618518217.jpg?c=2" />
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-8pcbviyy/images/stencil/600x900/products/6074/31523/010200851-6__29171.1619117953.jpg?c=2" />
+                    <img
+                        src="https://cdn11.bigcommerce.com/s-8pcbviyy/images/stencil/600x900/products/6075/31367/010200879-2__71329.1618517918.jpg?c=2" />
+                </div>
+            </div>
+        </section>
+        <div class="below-carousel">
+            <div>
+                <img src="https://lovoda.com/product_images/uploaded_images/210212-1.jpg">
+            </div>
+            <div>
+                <img src="https://lovoda.com/product_images/uploaded_images/210212-2.gif" alt="">
+            </div>
+        </div>
+
+        <!-- Instagram Container -->
+
+        <div class="insta-container">
+            <div class="widget-title">
+                <div class="insta-heading">
+                    <img src="https://image.flaticon.com/icons/png/512/1384/1384031.png" alt="insta">
+                    <h2>#LOVODA</h2>
+                </div>
+                <label class="undertext-insta">On Instagram</label>
+                <div class="insta-des">
+                    <p>Tag us on Instagram or use our hashtag</p>
+                    <p>to show us how you style Lovoda! </p>
+                </div>
+            </div>
+            <div class="insta-photos">
+                <div class="insta-item">
+                    <div class="insta-img"><img
+                            src="https://cdn.stamped.io/uploads/instagram/104726_17889574697297311_high.jpg" alt="">
+
+                        <div class="img-text">
+                            <h3>Shop The Look</h3>
+                            <a href="https://www.instagram.com/lovodashop/"><img
+                                    src="https://image.flaticon.com/icons/png/512/1384/1384031.png" alt=""></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="insta-item">
+                    <div class="insta-img"><img
+                            src="https://cdn.stamped.io/uploads/instagram/104726_18230043679042211_high.jpg" alt="">
+
+                        <div class="img-text">
+                            <h3>Shop The Look</h3>
+                            <a href=https://www.instagram.com/lovodashop /><img
+                                src="https://image.flaticon.com/icons/png/512/1384/1384031.png" alt=""></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="insta-item">
+                    <div class="insta-img"><img
+                            src="https://cdn.stamped.io/uploads/instagram/104726_17908842934800585_high.jpg" alt="">
+
+                        <div class="img-text">
+                            <h3>Shop The Look</h3>
+                            <a href="https://www.instagram.com/lovodashop/"> <img
+                                    src="https://image.flaticon.com/icons/png/512/1384/1384031.png" alt=""></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="insta-item">
+                    <div class="insta-img"><img
+                            src="https://cdn.stamped.io/uploads/instagram/104726_17847289952603314_high.jpg" alt="">
+
+                        <div class="img-text">
+                            <h3>Shop The Look</h3>
+                            <a href="https://www.instagram.com/lovodashop/"><img
+                                    src="https://image.flaticon.com/icons/png/512/1384/1384031.png" alt=""></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button id="show-insta"><a href="https://www.instagram.com/lovodashop/">VIEW GALLERY</a></button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+
+    <div class="main-footer">
+        <div class="footer-container">
+            <div class="footer-coloums">
+                <h3>SHOP</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Earrings</a></li>
+                    <li><a href="#">Neclace</a></li>
+                    <li><a href="#">Bracelets</a></li>
+                    <li><a href="#">Rings</a></li>
+                    <li><a href="#">Other Accesories</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </div>
+            <div class="footer-coloums">
+                <h3>ABOUT US</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Style Blog</a></li>
+                    <li><a href="#">Contact a Stylist</a></li>
+                    <li><a href="#">Bracelets</a></li>
+                    <li><a href="#">Meet a Stylist</a></li>
+                    <li><a href="#">Visit Us</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-coloums">
+                <h3>CUSTOMER SERVICE</h3>
+                <ul>
+                    <li><a href="#">Contact US</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Return policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-coloums">
+                <h3>FURTHUR INFO</h3>
+                <ul>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Affiliates</a></li>
+                    <li><a href="#">Wholesale Application</a></li>
+                </ul>
+            </div>
+            <div class="footer-coloums">
+                <h3>STAY CONNECTED</h3>
+                <div class="socials">
+                    <ul>
+                        <li><a href="https://www.instagram.com/lovodashop/">
+                                <svg viewBox="0 0 32 32" class="insta-svg">
+                                    <path
+                                        d="M25.522709,13.5369502 C25.7256898,14.3248434 25.8455558,15.1480745 25.8455558,15.9992932 C25.8455558,21.4379334 21.4376507,25.8455558 15.9998586,25.8455558 C10.5623493,25.8455558 6.15416148,21.4379334 6.15416148,15.9992932 C6.15416148,15.1480745 6.27459295,14.3248434 6.4775737,13.5369502 L3.6915357,13.5369502 L3.6915357,27.0764447 C3.6915357,27.7552145 4.24280653,28.3062027 4.92355534,28.3062027 L27.0764447,28.3062027 C27.7571935,28.3062027 28.3084643,27.7552145 28.3084643,27.0764447 L28.3084643,13.5369502 L25.522709,13.5369502 Z M27.0764447,3.6915357 L23.384909,3.6915357 C22.7050083,3.6915357 22.1543028,4.24280653 22.1543028,4.92214183 L22.1543028,8.61509104 C22.1543028,9.29442633 22.7050083,9.84569717 23.384909,9.84569717 L27.0764447,9.84569717 C27.7571935,9.84569717 28.3084643,9.29442633 28.3084643,8.61509104 L28.3084643,4.92214183 C28.3084643,4.24280653 27.7571935,3.6915357 27.0764447,3.6915357 Z M9.84597988,15.9992932 C9.84597988,19.3976659 12.6009206,22.1537374 15.9998586,22.1537374 C19.3987967,22.1537374 22.1543028,19.3976659 22.1543028,15.9992932 C22.1543028,12.6003551 19.3987967,9.84569717 15.9998586,9.84569717 C12.6009206,9.84569717 9.84597988,12.6003551 9.84597988,15.9992932 Z M3.6915357,31.9997173 C1.65296441,31.9997173 0,30.3461875 0,28.3062027 L0,3.6915357 C0,1.6526817 1.65296441,0 3.6915357,0 L28.3084643,0 C30.3473183,0 32,1.6526817 32,3.6915357 L32,28.3062027 C32,30.3461875 30.3473183,31.9997173 28.3084643,31.9997173 L3.6915357,31.9997173 Z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li><a href="https://www.instagram.com/lovodashop/">
+                                <svg viewBox="0 0 96.124 96.123" class="insta-svg">
+                                    <path
+                                        d="M72.089,0.02L59.624,0C45.62,0,36.57,9.285,36.57,23.656v10.907H24.037c-1.083,0-1.96,0.878-1.96,1.961v15.803   c0,1.083,0.878,1.96,1.96,1.96h12.533v39.876c0,1.083,0.877,1.96,1.96,1.96h16.352c1.083,0,1.96-0.878,1.96-1.96V54.287h14.654   c1.083,0,1.96-0.877,1.96-1.96l0.006-15.803c0-0.52-0.207-1.018-0.574-1.386c-0.367-0.368-0.867-0.575-1.387-0.575H56.842v-9.246   c0-4.444,1.059-6.7,6.848-6.7l8.397-0.003c1.082,0,1.959-0.878,1.959-1.96V1.98C74.046,0.899,73.17,0.022,72.089,0.02z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li><a href="https://www.instagram.com/lovodashop/">
+                                <svg viewBox="0 0 34 32" class="insta-svg">
+                                    <path
+                                        d="M1.356 15.647c0 6.24 3.781 11.6 9.192 13.957-0.043-1.064-0.008-2.341 0.267-3.499 0.295-1.237 1.976-8.303 1.976-8.303s-0.491-0.973-0.491-2.411c0-2.258 1.319-3.945 2.962-3.945 1.397 0 2.071 1.041 2.071 2.288 0 1.393-0.895 3.477-1.356 5.408-0.385 1.616 0.817 2.935 2.424 2.935 2.909 0 4.869-3.708 4.869-8.101 0-3.34-2.267-5.839-6.39-5.839-4.658 0-7.56 3.447-7.56 7.297 0 1.328 0.394 2.264 1.012 2.989 0.284 0.333 0.324 0.467 0.221 0.849-0.074 0.28-0.243 0.955-0.313 1.223-0.102 0.386-0.417 0.524-0.769 0.381-2.145-0.869-3.145-3.201-3.145-5.822 0-4.329 3.679-9.519 10.975-9.519 5.863 0 9.721 4.21 9.721 8.729 0 5.978-3.349 10.443-8.285 10.443-1.658 0-3.217-0.889-3.751-1.899 0 0-0.892 3.511-1.080 4.189-0.325 1.175-0.963 2.349-1.546 3.264 1.381 0.405 2.84 0.625 4.352 0.625 8.48 0 15.355-6.822 15.355-15.238s-6.876-15.238-15.355-15.238c-8.48 0-15.356 6.822-15.356 15.238z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li><a href="https://www.instagram.com/lovodashop/">
+                                <svg viewBox="0 0 43 32" class="insta-svg">
+                                    <path
+                                        d="M36.575 5.229c1.756-0.952 3.105-2.46 3.74-4.257-1.644 0.882-3.464 1.522-5.402 1.867-1.551-1.495-3.762-2.429-6.209-2.429-4.697 0-8.506 3.445-8.506 7.694 0 0.603 0.075 1.19 0.22 1.753-7.069-0.321-13.337-3.384-17.532-8.039-0.732 1.136-1.152 2.458-1.152 3.868 0 2.669 1.502 5.024 3.784 6.404-1.394-0.040-2.706-0.386-3.853-0.962-0.001 0.032-0.001 0.064-0.001 0.097 0 3.728 2.932 6.837 6.823 7.544-0.714 0.176-1.465 0.27-2.241 0.27-0.548 0-1.081-0.048-1.6-0.138 1.083 3.057 4.224 5.281 7.946 5.343-2.911 2.064-6.579 3.294-10.564 3.294-0.687 0-1.364-0.036-2.029-0.108 3.764 2.183 8.235 3.457 13.039 3.457 15.646 0 24.202-11.724 24.202-21.891 0-0.334-0.008-0.665-0.025-0.995 1.662-1.085 3.104-2.439 4.244-3.982-1.525 0.612-3.165 1.025-4.885 1.211z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <h3>FEATURED ON</h3>
+                <img src="https://lovoda.com/product_images/uploaded_images/asseenonwhite.png" alt="features">
+            </div>
+        </div>
+        <section class="bottom-footer">
+            <p>© 2021 Lovoda All Rights Reserved.</p>
+            <div class="footer-payment-icons">
+                <a href="https://www.paypal.com/in/home"><i class="fa fa-cc-paypal" style="font-size:40px"></i></a>
+                <a href="https://www.visa.co.in/"><i class="fa fa-cc-visa" style="font-size:40px"></i></a>
+                <a href="https://www.mastercard.co.in/en-in.html"><i class="fa fa-cc-mastercard"
+                        style="font-size:40px"></i></a>
+                <a href="https://www.americanexpress.com/en-in/"><i class="fa fa-cc-amex"
+                        style="font-size:40px"></i></a>
+                <a href="https://www.discover.com/"><i class="fa fa-cc-discover" style="font-size:40px"></i></a>
+            </div>
+        </section>
+    </div>
+</body>
+
+<!-- Login Popup Modal -->
+<div class="modal-container">
+    <div class="modal">
+        <i class="fa fa-times" onclick="closeModal()"></i>
+        <div class="modal-body">
+            <div class="modal-content">
+                <h3>Sign In</h3>
+                <form class="login-form">
+                    <div class="email-container">
+                        <label class="email-label">Email Addresss <small>*</small></label>
+                        <input type="email" id="email-login" placeholder="email">
+                    </div>
+                    <div class="email-container">
+                        <label class="password-label">Password<small> *</small></label>
+                        <input type="password" id="password-login" placeholder="password">
+                    </div>
+                </form>
+                <div class="buttons">
+                    <button id="login-btn">LOGIN</button>
+                    <button id="register-btn">REGISTER</button>
+                </div>
+                <a href="#">
+                    <p>Forgot your password?</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of Login Popup Modal -->
+
+
+<!-- cart -->
+
+<div class="cart-container">
+    <div id="cart-box">
+        <div id="cart-header">
+            <span id="cart-items">ITEMS</span>
+            <span id="cart-price">PRICE</span>
+            <span id="cart-quantity">QUANTITY</span>
+            <span id="cart-total">TOTAL</span>
+        </div>
+        <div id="item-added"></div>
+        <div id="cart-checkout-box">
+            <div id="subtotal">
+                <span id="subtotal-span">Subtotal:</span>
+                <span id="subtotal-amount">Amount</span>
+            </div>
+            <div id="grandtotal">
+                <span id="grandtotal-span">Grand total:</span>
+                <span id="grandtotal-amount">Amount</span>
+                <button id="proceed-to-checkout">PROCEED TO CHECKOUT</button>
+                <BUtton id="view-cart">VIEW CART</BUtton>
+                <button id="checkout-now">CHECKOUT NOW</button>
+                <span id="or-use">--or use--</span>
+                <div id="paypal-checkout">
+                    <img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" alt="">
+                    <span>CHECKOUT</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</html>
+<script src="/js/home.js"></script>
