@@ -1,7 +1,11 @@
 # Project-LOVODA
 
-Lovoda is an E-commerce online store which is located in US.
+Lovoda is an E-commerce online store which is located in US,it sell accessories and jwellery.
+
+https://lovoda.com/
 Here is a clone of the website with my knowledge on HTML , CSS, Javascript.
+
+Tools: VS code and Local storage to store the data.
 
 we created it with a team of three members from Masai school.
 
