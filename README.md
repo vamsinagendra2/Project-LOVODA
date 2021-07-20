@@ -21,6 +21,27 @@ https://kit.fontawesome.com/3824cf4ce7.js
 
 All the images are having URL's from the respective website.
 
+ABOUT PROJECT:
+
+Our project mainly contains the UI to shop a product with an end to end flow.
+
+Initially the landing page contains all the category names and mandatory options like login,register,cart,account pages 
+and also it contains some cool animations and corousel which helps to give a vibe to our project as they were also involved in original site.
+
+later to maintain a good shoping experience i created three product pages for new arrivals, earrings and necklace.
+The user can get their desired product by filtering trough price, color, material and also by sorting ,we hope this makes user experience more better.
+
+Next on clicking any product extra information is shown and there will be option to add to cart or wishlist and he/she can shop further by adding more or can directly jump to cart page and verify the price with items added , they can get the total.
+
+Finally they can checkout with their address and payment details  to plcae the order.
+
+This is how we made our best to make it as best as possible in the given time limit and with things we learned.
+
+Here ends this short note on our project.
+Thank you
+
+
+
 
 
 
