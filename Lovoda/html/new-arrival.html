@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lovoda | Necklaces</title>
-    <link rel="stylesheet" href="/css/new-arrival.css" />
+    <title>Lovoda</title>
+    <link rel="stylesheet" href="../css/new-arrival.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/3824cf4ce7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body>
@@ -21,9 +21,10 @@
             <div class="header-left">
                 <nav class="navbar">
                     <ul>
-                        <li><a href="#"><span>ACCOUNT</span></a></li>
-                        <li><a href="#"><span>LOGIN</span></a></li>
-                        <li><a href="#"><span>REGISTER</span></a></li>
+                        <li><a href="./loggedin-account.html"><span>ACCOUNT</span></a></li>
+                        <li><a href="#" id="after-login" "></a></li>
+                                                <i id=" icons" class="material-icons">expand_more</i>
+                        <li><a href="home.html"><span>LOGOUT</span></a></li>
                     </ul>
                 </nav>
             </div>
@@ -82,9 +83,9 @@
             <div class="container">
                 <nav class="navPages">
                     <ul class="navPages-list">
-                        <li><a href="new-arrival.html"><span>NEW</span></a></li>
-                        <li><a href="earrings.html"><span>EARRINGS</span></a></li>
-                        <li><a href="#"><span>NECKLACES</span></a></li>
+                        <li><a href="./new-arrival.html"><span>NEW</span></a></li>
+                        <li><a href="./earrings.html"><span>EARRINGS</span></a></li>
+                        <li><a href="./necklace.html"><span>NECKLACES</span></a></li>
                         <li><a href="#"><span>BRACELETS</span></a></li>
                         <li><a href="#"><span>RINGS</span></a></li>
                         <li><a href="#"><span>OTHER ACCESORIES</span></a></li>
@@ -98,31 +99,16 @@
 
 
     <!-- page tracker............ -->
-    
 
     <div class="page-tracker">
         <div class="tracker-content">
-            <p><a href="#">Home</a> ><a href="#">Necklaces</a> </p>
+            <p><a href="#">Home</a> ><a href="#">New</a> ><a href="#">New arrivals</a> </p>
         </div>
     </div>
 
     <div class="product-container">
         <div class="product-filter">
             <div class="filter-space">
-                <div class="filter-space-header">
-                    <span>Categories</span>
-                </div>
-                <div class="category">
-                    <ul>
-                        <li><a>Layered Necklaces</a></li>
-                        <li><a>Fine Necklaces</a></li>
-                        <li><a>Y-Necklace & Lariat</a></li>
-                        <li><a>Stone & Marble Necklaces</a></li>
-                        <li><a>Charm Necklaces</a></li>
-                        <li><a>Tassel & Pendant Necklaces</a></li>
-
-                    </ul>
-                </div>
                 <div class="filter-space-header">
                     <span>Refine By</span>
                 </div>
@@ -137,16 +123,16 @@
                     </div>
                     <div class="filter-list">
                         <ul>
-                            <li onclick="colorSilver()"><input type="checkbox" /><span>Silver</span></li>
-                            <li><input type="checkbox" /><span>Blue</span></li>
+                            <li><input type="checkbox" /><span>Beige</span></li>
+                            <li onclick="colorBlack()"><input  type="checkbox" /><span>Black</span></li>
+                            <li><input type="checkbox" /><span>Champagne</span></li>
                             <li onclick="colorClear()"><input type="checkbox" /><span>Clear</span></li>
                             <li onclick="colorGold()"><input type="checkbox" /><span>Gold</span></li>
                             <li><input type="checkbox" /><span>Gray</span></li>
                             <li><input type="checkbox" /><span>Green</span></li>
-                            <li><input type="checkbox" /><span>Pink</span></li>
-                            <li><input type="checkbox" /><span>Rose Gold</span></li>
+                            <li><input type="checkbox" /><span>Multi</span></li>
+                            <li><input type="checkbox" /><span>Neutral Tones</span></li>
                             <li><input type="checkbox" /><span>Orange</span></li>
-                            <li><input type="checkbox" /><span>Beige</span></li>
                         </ul>
                     </div>
                     <div class="filter-list-header" onclick="show(1)">
@@ -154,12 +140,12 @@
                     </div>
                     <div class="filter-list">
                         <ul>
-                            <li onclick="mat14k()"><input type="checkbox" /><span>14k Gold Plating</span></li>
-                            <li onclick="matSilver()"><input type="checkbox" /><span>Sterling Silver</span></li>
                             <li><input type="checkbox" /><span>10k Gold Plating</span></li>
+                            <li onclick="mat14k()"><input type="checkbox" /><span>14k Gold Plating</span></li>
                             <li><input type="checkbox" /><span>14k Rose Gold Plating</span></li>
                             <li><input type="checkbox" /><span>Acrylic</span></li>
                             <li><input type="checkbox" /><span>Stainless Steel</span></li>
+                            <li onclick="matSilver()"><input type="checkbox" /><span>Sterling Silver</span></li>
                         </ul>
                     </div>
                     <div class="filter-list-header" onclick="show(2)">
@@ -182,7 +168,7 @@
                         <span class="material-icons">
                             chevron_right
                         </span>
-                        <h5> View all brands</h5>
+                            <h5> View all brands</h5>
                         </a>
 
                     </div>
@@ -194,7 +180,12 @@
         <div class="product-div">
             <div class="product-header">
                 <div class="product-header-text">
-                    <span>Necklaces</span>
+                    <span>New Arrivals</span>
+                </div>
+                <div class="new-image">
+                    <a href="#"><img
+                            src="https://cdn11.bigcommerce.com/s-8pcbviyy/product_images/uploaded_images/dec2018-new-arrivals.jpg"
+                            alt="no image" /></a>
                 </div>
                 <div class="view-model">
                     <h5>VIEW AS</h5>
@@ -202,19 +193,30 @@
                     <div><i class="fas fa-bars"></i></div>
                     <h5>SORT BY:</h5>
                     <div><select id="sort" onchange="sort()">
-                            <option value="featured" selected="">Featured Items</option>
-                            <option value="priceasc">Price: Ascending</option>
-                            <option value="pricedesc">Price: Descending</option>
-                            <option value="newest">Newest Items</option>
-                            <option value="bestselling">Best Selling</option>
-                            <option value="alphaasc">A to Z</option>
-                            <option value="alphadesc">Z to A</option>
-                            <option value="review">By Review</option>
-                        </select></div>
+                        <option value="featured" selected="">Featured Items</option>
+                        <option value="newest">Newest Items</option>
+                        <option value="bestselling">Best Selling</option>
+                        <option value="alphaasc">A to Z</option>
+                        <option value="alphadesc">Z to A</option>
+                        <option value="review">By Review</option>
+                        <option value="priceasc">Price: Ascending</option>
+                        <option value="pricedesc">Price: Descending</option>
+                    </select></div>
                 </div>
             </div>
             <div class="product-elements">
-                
+                <!-- <div class="product-ele-div">
+                    <div class="product-cont">
+                        <div class="product-img-div">
+                            <div>NEW</div>
+                            <button>QUICK VIEW</button>
+                        </div>
+                        <div class="product-cap">
+                            <a href="#">Triangle and Pears Asymmetrical Hoop Earrings</a>
+                            <div class="price">$28.00</div>
+                        </div>
+                    </div>
+                </div> -->
             </div>
 
             <div class="pagenation">
@@ -229,11 +231,11 @@
                 </div>
             </div>
         </div>
-
+        
     </div>
     <!-- Footer -->
-
-
+    
+    
     <div class="main-footer">
         <div class="footer-container">
             <div class="footer-coloums">
@@ -258,7 +260,7 @@
                     <li><a href="#">Bracelets</a></li>
                     <li><a href="#">Meet a Stylist</a></li>
                     <li><a href="#">Visit Us</a></li>
-
+    
                 </ul>
             </div>
             <div class="footer-coloums">
@@ -327,8 +329,7 @@
                 <a href="https://www.visa.co.in/"><i class="fa fa-cc-visa" style="font-size:40px"></i></a>
                 <a href="https://www.mastercard.co.in/en-in.html"><i class="fa fa-cc-mastercard"
                         style="font-size:40px"></i></a>
-                <a href="https://www.americanexpress.com/en-in/"><i class="fa fa-cc-amex"
-                        style="font-size:40px"></i></a>
+                <a href="https://www.americanexpress.com/en-in/"><i class="fa fa-cc-amex" style="font-size:40px"></i></a>
                 <a href="https://www.discover.com/"><i class="fa fa-cc-discover" style="font-size:40px"></i></a>
             </div>
         </section>
@@ -336,231 +337,7 @@
 
 
 </body>
-<script src="js/list.js" ></script>
-
-<script>
-
-    // filter divs hide and show
-    var i = 0;
-    function show(a) {
-        var div = document.getElementsByClassName('filter-list');
-        var plus = document.getElementsByClassName('+');
-        if (i % 2 == 0) {
-            div[a].style.display = 'block';
-            plus[a].innerHTML = "-";
-            i++;
-        } else {
-            div[a].style.display = 'none';
-            plus[a].innerHTML = "+";
-            i++;
-        }
-    }
-    show(0);
-    show(1);
-    show(2);
-
-
-
-    // products appending from the ojects
-
-    productsList = JSON.parse(localStorage.getItem('productsList'));
-
-
-    function display(list) {
-        let main = document.getElementsByClassName('product-elements');
-        main = main[0];
-        let i = 1;
-
-        list.forEach(function (ele) {
-            console.log(ele);
-            if (ele.category == "necklace" && i < 16) {
-                let eleDiv = document.createElement('div');
-                eleDiv.setAttribute('class', 'product-ele-div')
-
-                let pcont = document.createElement('div');
-                pcont.setAttribute('class', 'product-cont')
-                let imgDiv = document.createElement('div');
-                imgDiv.setAttribute('class', 'product-img-div')
-                imgDiv.style.backgroundImage = `url(${ele.url})`;
-
-                let btn = document.createElement('button');
-                btn.innerHTML = "QUICK VIEW";
-
-                imgDiv.append(btn);
-
-                let pcap = document.createElement('div');
-                pcap.setAttribute('class', 'product-cap')
-                let a = document.createElement('a');
-                a.innerHTML = ele.name;
-
-                let price = document.createElement('div');
-                price.innerHTML = "$" + ele.price;
-                price.setAttribute('class', 'price');
-
-                pcap.append(a, price);
-
-                pcont.append(imgDiv, pcap);
-
-                eleDiv.append(pcont);
-
-                imgDiv.onmouseenter = function () {
-                    imgDiv.style.backgroundImage = `url(${ele.url2})`;
-                    btn.style.display = "block";
-                }
-                imgDiv.onmouseleave = function () {
-                    imgDiv.style.backgroundImage = `url(${ele.url})`;
-                    btn.style.display = "none";
-                }
-                pcont.onclick = function () {
-                    window.location.href = 'single-prod.html';
-                    let one = [];
-                    one.push(ele);
-                    localStorage.setItem('one', JSON.stringify(one));
-                }
-
-                main.append(eleDiv);
-                i++;
-            }
-        });
-    }
-
-    display(productsList);
-
-
-
-    function sort() {
-        let main = document.getElementsByClassName('product-elements');
-        main = main[0];
-        main.innerHTML = "";
-        let op = document.getElementById('sort').value;
-        let prod = JSON.parse(localStorage.getItem('productsList'));
-        if (op == "priceasc") {
-            prod = prod.sort(function (a, b) {
-                return a.price - b.price;
-            });
-            display(prod);
-        }
-        if (op == "pricedesc") {
-            prod = prod.sort(function (a, b) {
-                return b.price - a.price;
-            });
-            display(prod);
-        }
-        if (op == "alphaasc") {
-            prod = prod.sort(function (a, b) {
-                return a.name - b.name;
-            });
-            display(prod);
-        }
-        if (op == "alphadesc") {
-            prod = prod.sort(function (a, b) {
-                return b.name - a.name;
-            });
-            display(prod);
-        } else {
-            display(prod);
-        }
-
-    }
-
-    let arr = [];
-
-    function colorGold() {
-        let main = document.getElementsByClassName('product-elements');
-        main = main[0];
-        main.innerHTML = "";
-        let prod = JSON.parse(localStorage.getItem('productsList'));
-
-        prod = prod.filter(function (a) {
-            if (a.color == "Gold") {
-                arr.push(a);
-            }
-        });
-        display(arr);
-        let div = document.getElementsByClassName('filter-space-div')[0];
-        div.style.display = "none";
-    }
-    function colorSilver() {
-        let main = document.getElementsByClassName('product-elements');
-        main = main[0];
-        main.innerHTML = "";
-        let prod = JSON.parse(localStorage.getItem('productsList'));
-        prod = prod.filter(function (a) {
-            if (a.color == "Silver") {
-                arr.push(a);
-            }
-        });
-        display(arr);
-
-        let div = document.getElementsByClassName('filter-space-div')[0];
-        div.style.display = "none";
-    }
-    function colorClear() {
-        let main = document.getElementsByClassName('product-elements');
-        main = main[0];
-        main.innerHTML = "";
-        let prod = JSON.parse(localStorage.getItem('productsList'));
-        prod = prod.filter(function (a) {
-            if (a.color == "Clear") {
-                arr.push(a);
-            }
-        });
-        display(arr);
-        let div = document.getElementsByClassName('filter-space-div')[0];
-        div.style.display = "none";
-    }
-
-    function mat14k() {
-        let main = document.getElementsByClassName('product-elements');
-        main = main[0];
-        main.innerHTML = "";
-        let prod = JSON.parse(localStorage.getItem('productsList'));
-        prod = prod.filter(function (a) {
-            if (a.material == "14k Gold Plating") {
-                arr.push(a);
-            }
-        });
-        display(arr);
-        let div = document.getElementsByClassName('filter-space-div')[0];
-        div.style.display = "none";
-    }
-    function matSilver() {
-        let main = document.getElementsByClassName('product-elements');
-        main = main[0];
-        main.innerHTML = "";
-        let prod = JSON.parse(localStorage.getItem('productsList'));
-        prod = prod.filter(function (a) {
-            if (a.material == "Sterling Silver Post") {
-                arr.push(a);
-            }
-        });
-        display(arr);
-        let div = document.getElementsByClassName('filter-space-div')[0];
-        div.style.display = "none";
-    }
-    function price() {
-        let main = document.getElementsByClassName('product-elements');
-        main = main[0];
-        main.innerHTML = "";
-        let min = Number(document.getElementById('min').value);
-        let max = Number(document.getElementById('max').value);
-
-        let prod = JSON.parse(localStorage.getItem('productsList'));
-        let pricearr = [];
-        console.log(min, max)
-        prod = prod.filter(function (a) {
-            let p = Number(a.price);
-            if (p >= min && p <= max) {
-                pricearr.push(a);
-            }
-        });
-        console.log(pricearr)
-        display(pricearr);
-        let div = document.getElementsByClassName('filter-space-div')[0];
-        div.style.display = "none";
-    }
-
-
-</script>
+<script src="../js/list.js"></script>
+<script src="../js/new-arrival.js"></script>
 
 </html>

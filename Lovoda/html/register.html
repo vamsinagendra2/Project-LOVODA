@@ -5,11 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account</title>
-    <link rel="stylesheet" href="/css/account.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-
+    <title>Home lovoda</title>
+    <link rel="stylesheet" href="../css/account.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -20,19 +18,12 @@
             <div class="header-left">
                 <nav class="navbar">
                     <ul>
-                        <li><a href="account.html"><span>ACCOUNT</span></a></li>
-                        <li><a  href="#" id="after-login" "></a></li>
-                        <i id="icons" class="material-icons">expand_more</i>
-                        <li><a href="loggedin-home-page.html"><span>LOGOUT</span></a></li>
-                       
+                        <li><a href="./account.html"><span>ACCOUNT</span></a></li>
+                        <li><a href="#" id="login-popup" onclick="loginModal()"><span>LOGIN</span></a></li>
+                        <li><a href="./register.html"><span>REGISTER</span></a></li>
                     </ul>
                 </nav>
             </div>
-
-
-
-
-
 
             <!-- header right -->
             <div class="header-right">
@@ -47,7 +38,7 @@
                         <a href="#"><span>WISH LIST</span></a>
                     </div>
                     <div>
-                        <a href="#" onclick="cart()"><span>CART</span></a>
+                        <a href="#"><span>CART</span></a>
                     </div>
                     <div>
                         <i class="cart-icon">
@@ -79,7 +70,7 @@
         </div>
         <div class="header-bottom">
             <h1 class="header-logo">
-                <a href="loggedin-home-page.html">
+                <a href="./home.html">
                     <svg viewBox="0 0 323 48">
                         <text transform="matrix(1 0 0 1 75.9964 37.0558)">LOVODA</text>
                     </svg>
@@ -90,9 +81,9 @@
             <div class="container">
                 <nav class="navPages">
                     <ul class="navPages-list">
-                        <li><a href="#"><span>NEW</span></a></li>
-                        <li><a href="#"><span>EARRINGS</span></a></li>
-                        <li><a href="#"><span>NECKLACES</span></a></li>
+                        <li><a href="./new-arrival.html"><span>NEW</span></a></li>
+                        <li><a href="./earrings.html"><span>EARRINGS</span></a></li>
+                        <li><a href="./necklace.html"><span>NECKLACES</span></a></li>
                         <li><a href="#"><span>BRACELETS</span></a></li>
                         <li><a href="#"><span>RINGS</span></a></li>
                         <li><a href="#"><span>OTHER ACCESORIES</span></a></li>
@@ -102,44 +93,93 @@
             </div>
         </div>
     </header>
-    
-    <div id="stack">
-        <div>
-            <a href="loggedin-home-page.html">Home<i id="icons" class="material-icons">chevron_right</i></a href="#">
-            <a href="#">Your Account<i id="icons" class="material-icons">chevron_right</i></a href="#">
-            <a href="#">Your Orders<i id="icons" class="material-icons">chevron_right</i></a href="#">
+    <div id="stack"></div>
+    <h1 id="new-account">New Account</h1>
+    <hr>
+    <br>
+    <div id="register-form-container">
+        
+        <form id="reg-form" action="">
+        <div class="form-div">
+            <label class="reg-label" for="email">Email Address <span class="star">*</span></label>
+            <input class="reg-input" type="text" name="" id="email">
         </div>
-    </div>
+        <div class="form-div">
+            <label class="reg-label" for="password">Password <span class="star">*</span></label>
+            <input class="reg-input" type="password" name="" id="password">
+        </div>
+        <div class="form-div">
+            <label class="reg-label" for="cpassword">Confirm Password <span class="star">*</span></label>
+            <input class="reg-input" type="password" name="" id="cpassword">
+        </div>
+        <div class="form-div">
+            <label class="reg-label" for="">Country <span class="star">*</span></label>
+            <select name="" class="reg-select" id="country">
+                <option value="India">India</option>
+                <option value="Australia">Australia</option>
+                <option value="China">China</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">UK</option>
+                <option value="Russia">Russia</option>
+                <option value="France">France</option>
+            </select>
+        </div>
+        <div class="form-div">
+            <label class="reg-label" for="first-name">First Name <span class="star">*</span></label>
+            <input class="reg-input" type="text" name="" id="first-name">
+        </div>
+        <div class="form-div">
+            <label class="reg-label" for="last-name"> Last Name<span class="star">*</span></label>
+            <input class="reg-input" type="text" name="" id="last-name">
+        </div>
+        <div class="form-div">
+            <label class="reg-label" for="address1"> Address-Line 1<span class="star">*</span></label>
+            <input class="reg-input" type="text" name="" id="address1">
+        </div>
+        <div class="form-div">
+            <label class="reg-label" for="address2">Address-Line 2 </label>
+            <input class="reg-input" type="text" name="" id="address2">
+        </div>
+        <div class="form-div">
+            <label class="reg-label" for="company-name"> Company Name</label>
+            <input class="reg-input" type="text" name="" id="company-name">
+        </div>
+        <div class="form-div">
+            <label class="reg-label" for="city"> Suburb/city<span class="star">*</span></label>
+            <input class="reg-input" type="text" name="" id="city">
+        </div>
+        <div class="form-div">
+            <label class="reg-label" for="">State/Province <span class="star">*</span></label>
+            <select name="" class="reg-select" id="state">
+                <option value="Haryana">Haryana</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Uttar pradesh">Uttar pradesh</option>
+                <option value="Goa">Goa</option>
+                <option value="kerala">kerala</option>
+                <option value="Tamil Nadu">UK</option>
+                <option value="Assam">Russia</option>
+                <option value="Sikkim">France</option>
+            </select>
+        </div>
+        <div class="form-div">
+            <label class="reg-label" for="zip">Zip/Postcode<span class="star">*</span></label>
+            <input class="reg-input" type="number" name="" id="zip">
+        </div>
+        <div class="form-div">
+            <label class="reg-label" for="phone-number">Phone Number<span class="star">*</span></label>
+            <input class="reg-input" type="number" name="" id="phone-number">
+        </div>
+        
 
-    
-    <div id="loggedin-account-page">
-        <h1 >Orders</h1>
-        <div id="items-box">
-            <a  href="#" id="orders" onclick="orders()" class="items">&nbsp;&nbsp; &nbsp;ORDERS&nbsp; &nbsp;&nbsp; &nbsp;</a>
-            <a  href="#" onclick="" class="items">&nbsp; &nbsp; &nbsp; &nbsp;RETURNS&nbsp; &nbsp;&nbsp; &nbsp;</a>
-            <a  href="#" onclick="" class="items">&nbsp; &nbsp;&nbsp; &nbsp;MESSAGES&nbsp; &nbsp;&nbsp; &nbsp; </a>
-            <a  href="#" onclick="" class="items">&nbsp; &nbsp;&nbsp; &nbsp;ADDRESSES &nbsp; &nbsp;&nbsp; &nbsp;</a>
-            <a  href="#" onclick="" class="items">&nbsp; &nbsp;&nbsp; &nbsp;WISH LISTS&nbsp; &nbsp;&nbsp; &nbsp; </a>
-            <a  href="#" onclick="" class="items">&nbsp; &nbsp;&nbsp; &nbsp;RECENTLY VIEWED &nbsp; &nbsp;&nbsp; &nbsp;</a>
-            <a href="#"  onclick="account_settings()" class="items" id="account-settings-item">&nbsp; &nbsp;&nbsp; &nbsp;ACCOUNT SETTINGS &nbsp; &nbsp; &nbsp; &nbsp;</a>
-        </div>
+        </form>
         
-    <div id="orders-div">
-        <div id="no-orders">
-            <i id="icons" class="material-icons">info</i>
-            <p>You haven't placed any orders with us.When you do,their status will appear on this page.</p>
+        <div id="robot">
+            <input type="checkbox" name="" id="check-box">I'm not a robot
+            <img src="data:image/png;base64,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" alt="">
         </div>
+    <button id="create-account" onclick="signUp()">CREATE ACCOUNT</button>
     </div>
-    <div id="returns-div"></div>
-    <div id="messages-div"></div>
-    <div id="address-div"></div>
-    <div id="wish-list-div"></div>
-    <div id="recently-viewed-div"></div>
-    <div id="account-settings-div"></div>
-        
-    </div>
-    
-    
     <div class="main-footer">
         <div class="footer-container">
             <div class="footer-coloums">
@@ -237,53 +277,41 @@
                         style="font-size:40px"></i></a>
                 <a href="https://www.discover.com/"><i class="fa fa-cc-discover" style="font-size:40px"></i></a>
             </div>
+            
         </section>
     </div>
-<!-- cart -->
 
-<div class="cart-container">
-    <div id="cart-box">
-        <div id="cart-header">
-            <span id="cart-items">ITEMS</span>
-            <span id="cart-price">PRICE</span>
-            <span id="cart-quantity">QUANTITY</span>
-            <span id="cart-total">TOTAL</span>
-        </div>
-        <div id="item-added"></div>
-        <div id="cart-checkout-box">
-            <div id="subtotal">
-                <span id="subtotal-span">Subtotal:</span>
-                <span id="subtotal-amount">Amount</span>
-            </div>
-            <div id="grandtotal">
-                <span id="grandtotal-span">Grand total:</span>
-                <span id="grandtotal-amount">Amount</span>
-                <button id="proceed-to-checkout">PROCEED TO CHECKOUT</button>
-                <BUtton id="view-cart">VIEW CART</BUtton>
-                <button id="checkout-now">CHECKOUT NOW</button>
-                <span id="or-use">--or use--</span>
-                <div id="paypal-checkout">
-                    <img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" alt="">
-                    <span>CHECKOUT</span>
+    <!-- Login Popup Modal -->
+    <div class="modal-container">
+        <div class="modal">
+            <i class="fa fa-times" onclick="closeModal()"></i>
+            <div class="modal-body">
+                <div class="modal-content">
+                    <h3>Sign In</h3>
+                    <form class="login-form">
+                        <div class="email-container">
+                            <label class="email-label">Email Addresss <small>*</small></label>
+                            <input type="email" id="email-login" placeholder="email">
+                        </div>
+                        <div class="email-container">
+                            <label class="password-label">Password<small> *</small></label>
+                            <input type="password" id="password-login" placeholder="password">
+                        </div>
+                    </form>
+                    <div class="buttons">
+                        <button id="login-btn">LOGIN</button>
+                        <button id="register-btn">REGISTER</button>
+                    </div>
+                    <a href="#">
+                        <p>Forgot your password?</p>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
+    <!-- End of Login Popup Modal -->
 
 </body>
 
-
 </html>
-<script src="register.js"></script>
-<script>
-    var users = JSON.parse(localStorage.getItem('users'))
-        var login_user = document.getElementById('after-login')
-        login_user.style.fontWeight = 700
-        login_user.style.color = "black"
-        login_user.style.fontSize = "10px"
-        login_user.style.letterSpacing = "1px"
-        login_user.style.fontFamily = "Open Sans, sans-serif"
-        login_user.innerHTML = `<span>HELLO</span>,&nbsp;${users[0].firstname.toUpperCase()} &nbsp;${users[0].lastname.toUpperCase()}.&nbsp;`
-</script>
+<script src="../js/register.js"></script>

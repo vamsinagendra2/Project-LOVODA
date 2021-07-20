@@ -176,3 +176,16 @@ function cart() {
     console.log(cart_box);
     cart_box.style.display = "block"
 }
+
+
+// loggedin - account ...........
+
+ var users = JSON.parse(localStorage.getItem('users'))
+        var login_user = document.getElementById('after-login')
+        login_user.style.fontWeight = 700
+        login_user.style.color = "black"
+        login_user.style.fontSize = "10px"
+        login_user.style.letterSpacing = "1px"
+        login_user.style.fontFamily = "Open Sans, sans-serif"
+login_user.innerHTML = `<span>HELLO</span>,&nbsp;${users[0].firstname.toUpperCase()} &nbsp;${users[0].lastname.toUpperCase()}.&nbsp;`
+        

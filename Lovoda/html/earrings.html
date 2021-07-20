@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home lovoda</title>
-    <link rel="stylesheet" href="/css/account.css" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <title>Lovoda | Earrings </title>
+    <link rel="stylesheet" href="../css/new-arrival.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/3824cf4ce7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body>
@@ -21,18 +21,13 @@
             <div class="header-left">
                 <nav class="navbar">
                     <ul>
-                        <li><a href="account.html"><span>ACCOUNT</span></a></li>
-                        <li><a href="#" id="after-login" "></a></li>
-                        <i id=" icons" class="material-icons">expand_more</i>
-                        <li><a href="home.html"><span>LOGOUT</span></a></li>
-
+                        <li><a href="./loggedin-account.html"><span>ACCOUNT</span></a></li>
+                        <li><a href="./new-account.html"><span>LOGIN</span></a></li>
+                        <li><a href="./register.html"><span>REGISTER</span></a></li>
                     </ul>
                 </nav>
             </div>
 
-
-
-            <!-- header right -->
             <div class="header-right">
                 <div class="right-content">
                     <a class="search-toggle" href="#    ">
@@ -67,7 +62,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Header center -->
             <div class="header-center">
                 <p>
                     US ONLY - Free Shipping over $50 & Free Returns
@@ -88,9 +82,9 @@
             <div class="container">
                 <nav class="navPages">
                     <ul class="navPages-list">
-                        <li><a href="#"><span>NEW</span></a></li>
-                        <li><a href="#"><span>EARRINGS</span></a></li>
-                        <li><a href="#"><span>NECKLACES</span></a></li>
+                        <li><a href="./new-arrival.html"><span>NEW</span></a></li>
+                        <li><a href="./earrings.html"><span>EARRINGS</span></a></li>
+                        <li><a href="./necklace.html"><span>NECKLACES</span></a></li>
                         <li><a href="#"><span>BRACELETS</span></a></li>
                         <li><a href="#"><span>RINGS</span></a></li>
                         <li><a href="#"><span>OTHER ACCESORIES</span></a></li>
@@ -101,79 +95,154 @@
         </div>
     </header>
 
-    <div id="stack">
-        <div>
-            <a href="#">Home<i id="icons" class="material-icons">chevron_right</i></a href="#">
-            <a href="#">Your Cart<i id="icons" class="material-icons">chevron_right</i></a href="#">
-            
+
+
+    <!-- page tracker............ -->
+
+    <div class="page-tracker">
+        <div class="tracker-content">
+            <p><a href="#">Home</a>  ><a href="#">Earrings</a> </p>
         </div>
     </div>
 
+    <div class="product-container">
+        <div class="product-filter">
+            <div class="filter-space">
+                <div class="filter-space-header">
+                    <span>Categories</span>
+                </div>
+                <div class="category">
+                    <ul>
+                        <li><a>statement Earrings</a></li>
+                        <li><a>Charm Earrings</a></li>
+                        <li><a>Natural Earrings</a></li>
+                        <li><a>Hypoallergenic Earrings</a></li>
+                        <li><a>Fine Earrings</a></li>
+                            
+                    </ul>
+                </div>
+                <div class="filter-space-header">
+                    <span>Refine By</span>
+                </div>
+                <div class="filter-space-div">
+                    <div class="filter-space-content">
+                        <span>No filters applied</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="filter-list-header" onclick="show(0)">
+                        <span>Product Color</span><span class="+">+</span>
+                    </div>
+                    <div class="filter-list">
+                        <ul>
+                            <li><input type="checkbox" /><span>Beige</span></li>
+                            <li onclick="colorBlack()"><input type="checkbox" /><span>Black</span></li>
+                            <li><input type="checkbox" /><span>Champagne</span></li>
+                            <li onclick="colorClear()"><input type="checkbox" /><span>Clear</span></li>
+                            <li onclick="colorGold()"><input type="checkbox" /><span>Gold</span></li>
+                            <li><input type="checkbox" /><span>Gray</span></li>
+                            <li><input type="checkbox" /><span>Green</span></li>
+                            <li><input type="checkbox" /><span>Multi</span></li>
+                            <li><input type="checkbox" /><span>Neutral Tones</span></li>
+                            <li><input type="checkbox" /><span>Orange</span></li>
+                        </ul>
+                    </div>
+                    <div class="filter-list-header" onclick="show(1)">
+                        <span>Material</span><span class="+">+</span>
+                    </div>
+                    <div class="filter-list">
+                        <ul>
+                            <li><input type="checkbox" /><span>10k Gold Plating</span></li>
+                            <li onclick="mat14k()"><input type="checkbox" /><span>14k Gold Plating</span></li>
+                            <li><input type="checkbox" /><span>14k Rose Gold Plating</span></li>
+                            <li><input type="checkbox" /><span>Acrylic</span></li>
+                            <li><input type="checkbox" /><span>Stainless Steel</span></li>
+                            <li onclick="matSilver()"><input type="checkbox" /><span>Sterling Silver</span></li>
+                        </ul>
+                    </div>
+                    <div class="filter-list-header" onclick="show(2)">
+                        <span>Price</span><span class="+">+</span>
+                    </div>
+                    <div class="filter-list">
+                        <div class="filter-price">
+                            <input type="number" placeholder="Min." id="min" />
+                            <input type="number" placeholder="Max." id="max" />
+                        </div>
+                        <button onclick="price()">UPDATE</button>
+                    </div>
+                    <div class="filter-list-header brands">
+                        <span>Brands</span><span></span>
+                    </div>
+                    <div class="filter-list-header brands lovoda">
+                        <a href="#">
+                            <p>Lovoda</p>
+                        </a>
+                        <span class="material-icons">
+                            chevron_right
+                        </span>
+                        <h5> View all brands</h5>
+                        </a>
 
-    <div id="your-cart-page">
-        <h1>Your Cart</h1>
-        <div id="cart-heading">
-            <span>ITEMS</span>
-            <span id="price-heading">PRICE</span>
-            <span id="quantity-heading">QUANTITY</span>
-            <span id="total-heading">TOTAL</span>
-        </div>
-        <div id="your-cart-items-added">
-            <div id="your-cart-items-div-out">
-                <div id="your-cart-items-div-in">
-                    <img src="${products[0].url}" alt="">
-                    <p id="your-cart-name-p">${products[0].name}</p>
-                    <h4 id="your-cart-price-h4">${"$ "+ products[0].price}</h4>
-                    <p id="your-cart-quantity-p">${quantity}</p>
-                    <h4 id="your-cart-total-h4">${"$ " + products[0].price*quantity}</h4>
-            
-                </div>
-            
-            </div>
-        </div>
-        <div id="your-cart-checkout">
-            <div class="your-cart-items" id="your-cart-subtotal">
-                <h4>Subtotal</h4>
-                <h4>$ 28</h4>
-            </div>
-            <div class="your-cart-items" id="your-cart-shipping">
-                <h4>Shipping</h4>
-                <h4 class="your-cart-grey">add info</h4>
-            </div>
-            <div class="your-cart-items" id="your-cart-tax">
-                <h4>Tax:</h4>
-                <p>$ 0</p>
-            </div>
-            <div class="your-cart-items" id="your-cart-coupon">
-                <h4>Coupon Code:</h4>
-                <h4 class="your-cart-grey">Add Coupon</h4>
-            </div>
-            <div class="your-cart-items" id="your-cart-gift-certificate">
-                <h4>Gift Certificate:</h4>
-                <h4 class="your-cart-grey">Gift Certificate</h4>
-            </div>
-            <div class="your-cart-items" id="your-cart-grandtotal">
-                <h4>Grand total:</h4>
-                <h4>$ 28</h4>
-            </div>
-            <div id="extras">
-                <p>or 4 Interest-free installments of $14.84 by</p>
-                <img src="https://static.afterpay.com/integration/product-page/logo-afterpay-colour.png" alt="">
-                <i id=" icons" class="material-icons">info</i>
-            </div>
-            <div id="your-cart-proceed-to-checkout">
-                <div id="proceed-to-checkout2" onclick="proceedToCheckout()">PROCEED TO CHECKOUT</div>
-                <p>-- or use --</p>
-                <div id="paypal-checkout2">
-                    <img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" alt="">
-                    <span>CHECKOUT</span>
+                    </div>
                 </div>
             </div>
-            
         </div>
+
+        <!-- products layout -->
+        <div class="product-div">
+            <div class="product-header">
+                <div class="product-header-text">
+                    <span>Earrings</span>
+                </div>
+                <div class="view-model">
+                    <h5>VIEW AS</h5>
+                    <div><i class="fas fa-th"></i></div>
+                    <div><i class="fas fa-bars"></i></div>
+                    <h5>SORT BY:</h5>
+                    <div><select id="sort" onchange="sort()">
+                            <option value="featured" selected="">Featured Items</option>
+                            <option value="newest">Newest Items</option>
+                            <option value="bestselling">Best Selling</option>
+                            <option value="alphaasc">A to Z</option>
+                            <option value="alphadesc">Z to A</option>
+                            <option value="review">By Review</option>
+                            <option value="priceasc">Price: Ascending</option>
+                            <option value="pricedesc">Price: Descending</option>
+                        </select></div>
+                </div>
+            </div>
+            <div class="product-elements">
+                <!-- <div class="product-ele-div">
+                    <div class="product-cont">
+                        <div class="product-img-div">
+                            <div>NEW</div>
+                            <button>QUICK VIEW</button>
+                        </div>
+                        <div class="product-cap">
+                            <a href="#">Triangle and Pears Asymmetrical Hoop Earrings</a>
+                            <div class="price">$28.00</div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="pagenation">
+                <div>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                    <li>NEXT</li>
+                </div>
+            </div>
+        </div>
+
     </div>
-
-
+    <!-- Footer -->
+    
+    
     <div class="main-footer">
         <div class="footer-container">
             <div class="footer-coloums">
@@ -198,7 +267,7 @@
                     <li><a href="#">Bracelets</a></li>
                     <li><a href="#">Meet a Stylist</a></li>
                     <li><a href="#">Visit Us</a></li>
-
+    
                 </ul>
             </div>
             <div class="footer-coloums">
@@ -267,72 +336,17 @@
                 <a href="https://www.visa.co.in/"><i class="fa fa-cc-visa" style="font-size:40px"></i></a>
                 <a href="https://www.mastercard.co.in/en-in.html"><i class="fa fa-cc-mastercard"
                         style="font-size:40px"></i></a>
-                <a href="https://www.americanexpress.com/en-in/"><i class="fa fa-cc-amex"
-                        style="font-size:40px"></i></a>
+                <a href="https://www.americanexpress.com/en-in/"><i class="fa fa-cc-amex" style="font-size:40px"></i></a>
                 <a href="https://www.discover.com/"><i class="fa fa-cc-discover" style="font-size:40px"></i></a>
             </div>
         </section>
     </div>
 
 
-
 </body>
-<!-- Login Popup Modal -->
-<div class="modal-container">
-    <div class="modal">
-        <i class="fa fa-times" onclick="closeModal()"></i>
-        <div class="modal-body">
-            <div class="modal-content">
-                <h3>Sign In</h3>
-                <form class="login-form">
-                    <div class="email-container">
-                        <label class="email-label">Email Addresss <small>*</small></label>
-                        <input type="email" id="email-login" placeholder="email">
-                    </div>
-                    <div class="email-container">
-                        <label class="password-label">Password<small> *</small></label>
-                        <input type="password" id="password-login" placeholder="password">
-                    </div>
-                </form>
-                <div class="buttons">
-                    <button id="login-btn">LOGIN</button>
-                    <button id="register-btn">REGISTER</button>
-                </div>
-                <a href="#">
-                    <p>Forgot your password?</p>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End of Login Popup Modal -->
+
+<script src="../js/list.js"></script>
+
+<script src="../js/earrings.js" ></script>
 
 </html>
-<script src="register.js"></script>
-<script>
-    var your_cart_out = document.getElementById("your-cart-items-div-out")
-        var your_cart_div = document.getElementById('your-cart-items-div-in')
-        console.log(your_cart_out);
-        
-        var cart = JSON.parse(localStorage.getItem('cart'))
-        for (i = 0; i < cart.length; i++) {
-            var quantity = 0;
-            cart.forEach(element => {
-                if (element.name == cart[0].name) {
-                    quantity++;
-                }
-            });
-            your_cart_div.innerHTML = `<img src="${cart[i].url}" alt="">
-        <p id="your-cart-name-p">${cart[i].name}</p>
-        <h4 id="your-cart-price-h4">${"$ " + cart[i].price}</h4>
-        <p id="your-cart-quantity-p">${quantity}</p>
-        <h4 id="your-cart-total-h4">${"$ " + cart[i].price * quantity}</h4>
-    `
-            your_cart_out.appendChild(your_cart_div)
-        }
-        console.log(your_cart_div)
-
-        function proceedToCheckout(){
-            window.location.href="checkout.html"
-        }
-</script>

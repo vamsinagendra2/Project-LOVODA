@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Log in</title>
-    <link rel="stylesheet" href="/css/account.css" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home lovoda</title>
+    <link rel="stylesheet" href="../css/account.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 
 </head>
 
@@ -21,18 +20,14 @@
             <div class="header-left">
                 <nav class="navbar">
                     <ul>
-                        <li><a href="account.html"><span>ACCOUNT</span></a></li>
-                        <li><a href="#" id="login-popup" onclick="loginModal()"><span>LOGIN</span></a></li>
-                        <li><a href="register.html"><span>REGISTER</span></a></li>
+                        <li><a href="./account.html"><span>ACCOUNT</span></a></li>
+                        <li><a  href="#" id="after-login" "></a></li>
+                        <i id="icons" class="material-icons">expand_more</i>
+                        <li><a href="./loggedin-home-page.html"><span>LOGOUT</span></a></li>
+                       
                     </ul>
                 </nav>
             </div>
-
-
-
-
-
-
             <!-- header right -->
             <div class="header-right">
                 <div class="right-content">
@@ -46,7 +41,7 @@
                         <a href="#"><span>WISH LIST</span></a>
                     </div>
                     <div>
-                        <a href="#"><span>CART</span></a>
+                        <a href="#" onclick="cart()"><span>CART</span></a>
                     </div>
                     <div>
                         <i class="cart-icon">
@@ -78,7 +73,7 @@
         </div>
         <div class="header-bottom">
             <h1 class="header-logo">
-                <a href="./home.html">
+                <a href="./loggedin-home-page.html">
                     <svg viewBox="0 0 323 48">
                         <text transform="matrix(1 0 0 1 75.9964 37.0558)">LOVODA</text>
                     </svg>
@@ -89,9 +84,9 @@
             <div class="container">
                 <nav class="navPages">
                     <ul class="navPages-list">
-                        <li><a href="#"><span>NEW</span></a></li>
-                        <li><a href="#"><span>EARRINGS</span></a></li>
-                        <li><a href="#"><span>NECKLACES</span></a></li>
+                        <li><a href="./new-arrival.html"><span>NEW</span></a></li>
+                        <li><a href="./earrings.html"><span>EARRINGS</span></a></li>
+                        <li><a href="./necklace.html"><span>NECKLACES</span></a></li>
                         <li><a href="#"><span>BRACELETS</span></a></li>
                         <li><a href="#"><span>RINGS</span></a></li>
                         <li><a href="#"><span>OTHER ACCESORIES</span></a></li>
@@ -101,27 +96,44 @@
             </div>
         </div>
     </header>
+    
     <div id="stack">
         <div>
-            <a href="loggedin-home-page.html">Home<i id="icons" class="material-icons">chevron_right</i></a href="#">
-            <a href="#">Login</a href="#">
-
+            <a href="./loggedin-home-page.html">Home<i id="icons" class="material-icons">chevron_right</i></a href="#">
+            <a href="#">Your Account<i id="icons" class="material-icons">chevron_right</i></a href="#">
+            <a href="#">Your Orders<i id="icons" class="material-icons">chevron_right</i></a href="#">
         </div>
     </div>
 
-    <div id="account-form-container">
-        <form id="form" action="">
-            <h2>Login</h2>
-            <br>
-            <br>
-            <label for="username">Email Address <span class="star">*</span> </label><br>
-            <input id="username" type="text"><br>
-            <label for="password">Password <span class="star">*</span> </label><br>
-            <input id="password" type="password"><br>
-            <button id="btn" onclick="login(event)">LOGIN</button>
-            <a id="forgot" href="">Forgot your password?</a>
-        </form>
+    
+    <div id="loggedin-account-page">
+        <h1 >Orders</h1>
+        <div id="items-box">
+            <a  href="#" id="orders" onclick="orders()" class="items">&nbsp;&nbsp; &nbsp;ORDERS&nbsp; &nbsp;&nbsp; &nbsp;</a>
+            <a  href="#" onclick="" class="items">&nbsp; &nbsp; &nbsp; &nbsp;RETURNS&nbsp; &nbsp;&nbsp; &nbsp;</a>
+            <a  href="#" onclick="" class="items">&nbsp; &nbsp;&nbsp; &nbsp;MESSAGES&nbsp; &nbsp;&nbsp; &nbsp; </a>
+            <a  href="#" onclick="" class="items">&nbsp; &nbsp;&nbsp; &nbsp;ADDRESSES &nbsp; &nbsp;&nbsp; &nbsp;</a>
+            <a  href="#" onclick="" class="items">&nbsp; &nbsp;&nbsp; &nbsp;WISH LISTS&nbsp; &nbsp;&nbsp; &nbsp; </a>
+            <a  href="#" onclick="" class="items">&nbsp; &nbsp;&nbsp; &nbsp;RECENTLY VIEWED &nbsp; &nbsp;&nbsp; &nbsp;</a>
+            <a href="#"  onclick="account_settings()" class="items" id="account-settings-item">&nbsp; &nbsp;&nbsp; &nbsp;ACCOUNT SETTINGS &nbsp; &nbsp; &nbsp; &nbsp;</a>
+        </div>
+        
+    <div id="orders-div">
+        <div id="no-orders">
+            <i id="icons" class="material-icons">info</i>
+            <p>You haven't placed any orders with us.When you do,their status will appear on this page.</p>
+        </div>
     </div>
+    <div id="returns-div"></div>
+    <div id="messages-div"></div>
+    <div id="address-div"></div>
+    <div id="wish-list-div"></div>
+    <div id="recently-viewed-div"></div>
+    <div id="account-settings-div"></div>
+        
+    </div>
+    
+    
     <div class="main-footer">
         <div class="footer-container">
             <div class="footer-coloums">
@@ -221,82 +233,41 @@
             </div>
         </section>
     </div>
+<!-- cart -->
 
-
-
-</body>
-<!-- Login Popup Modal -->
-<div class="modal-container">
-    <div class="modal">
-        <i class="fa fa-times" onclick="closeModal()"></i>
-        <div class="modal-body">
-            <div class="modal-content">
-                <h3>Sign In</h3>
-                <form class="login-form">
-                    <div class="email-container">
-                        <label class="email-label">Email Addresss <small>*</small></label>
-                        <input type="email" id="email-login" placeholder="email">
-                    </div>
-                    <div class="email-container">
-                        <label class="password-label">Password<small> *</small></label>
-                        <input type="password" id="password-login" placeholder="password">
-                    </div>
-                </form>
-                <div class="buttons">
-                    <button id="login-btn" onclick="login(event)">LOGIN</button>
-                    <button id="register-btn" onclick="register(event)">REGISTER</button>
+<div class="cart-container">
+    <div id="cart-box">
+        <div id="cart-header">
+            <span id="cart-items">ITEMS</span>
+            <span id="cart-price">PRICE</span>
+            <span id="cart-quantity">QUANTITY</span>
+            <span id="cart-total">TOTAL</span>
+        </div>
+        <div id="item-added"></div>
+        <div id="cart-checkout-box">
+            <div id="subtotal">
+                <span id="subtotal-span">Subtotal:</span>
+                <span id="subtotal-amount">Amount</span>
+            </div>
+            <div id="grandtotal">
+                <span id="grandtotal-span">Grand total:</span>
+                <span id="grandtotal-amount">Amount</span>
+                <button id="proceed-to-checkout">PROCEED TO CHECKOUT</button>
+                <BUtton id="view-cart">VIEW CART</BUtton>
+                <button id="checkout-now">CHECKOUT NOW</button>
+                <span id="or-use">--or use--</span>
+                <div id="paypal-checkout">
+                    <img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-100px.png" alt="">
+                    <span>CHECKOUT</span>
                 </div>
-                <a href="#">
-                    <p>Forgot your password?</p>
-                </a>
             </div>
         </div>
     </div>
 </div>
-<!-- End of Login Popup Modal -->
+
+
+</body>
+
 
 </html>
-<script>
-    // login
-    const open = document.getElementById('login-popup')
-    const modal_container = document.querySelector('.modal-container')
-    const close = document.querySelector('fa fa-times')
-
-    function loginModal() {
-        modal_container.classList.add('showModal');
-    }
-
-    function closeModal() {
-        modal_container.classList.remove('showModal');
-    }
-
-    function register(e) {
-        e.preventDefault()
-        window.location.href = "register.html"
-        console.log("hello")
-    }
-    function login(e) {
-        e.preventDefault()
-
-        var users = JSON.parse(localStorage.getItem('users'))
-
-
-        var username = document.getElementById('username').value
-        var password = document.getElementById('password').value
-        console.log(password)
-        var c = 0;
-        for (i = 0; i < users.length; i++) {
-
-            if (users[i].email == username && users[i].password == password) {
-                c++
-                window.location.href = "loggedin-home-page.html"
-            }
-
-        }
-        if (c == 0) {
-            alert("Invalid")
-        }
-    }
-
-
-</script>
+<script src="../js/register.js"></script>
